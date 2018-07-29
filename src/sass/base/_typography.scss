@@ -1,0 +1,48 @@
+h1, h2, h3, h4, h5, h6{
+	font-family: $headings-font-family;
+	font-weight: $headings-font-weight;
+	line-height: $headings-line-height;
+	color: $headings-color;
+}
+
+h1{
+	font-size: $h1-font-size;
+	color: $white;
+	margin-bottom: 50px;
+	letter-spacing: 5px;
+	@media (max-width: 1600px) {
+		letter-spacing: 0;
+	}
+}
+h2{
+	font-size: $h2-font-size;
+	color: #008dd2;
+}
+h3{
+	font-size: $h3-font-size;
+}
+h4{
+	font-size: $h4-font-size;
+}
+h5{
+	font-size: $h5-font-size;
+}
+h6{
+	font-size: $h6-font-size;
+}
+
+p{
+	font-size: $base-font-size;
+}
+
+a {
+	color: $base-link-color;
+	text-decoration: none;
+	vertical-align:baseline;
+	-webkit-tap-highlight-color: transparent;
+	&:hover,
+	&:focus {
+		text-decoration: none;
+		color: initial;
+	}
+}

@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <title>Uonline</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500i,700,700i,900,900i&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.min.css">
+</head>
+
+<body>
+    <div id="header" class="d-flex align-items-center justify-content-between">
+        <div class="logo-links d-flex aligh-items-center">
+            <a href="/" class="logo">
+                <img src="images/logo.svg" alt="logo">
+            </a>
+            <div class="links d-flex align-items-center">
+                <a href="#">Для дома</a>
+                <a href="#">Для бизнеса</a>
+            </div>
+        </div>
+        <a href="tel:+78126704343" class="phone d-flex align-items-center">+7(812) 670-43-43</a>
+        <ul id="myMenu" class="d-flex align-items-center">
+            <li data-menuanchor="price"><a href="#price">Тарифы</a></li>
+            <li data-menuanchor="services"><a href="#services">Услуги</a></li>
+            <li data-menuanchor="about"><a href="#about">О нас</a></li>
+            <li><a href="#">Личный Кабинет</a></li>
+        </ul>        
+    </div>
+    <div id="footer-socials" class="d-flex align-items-center">
+        <a href="#">
+            <img src="images/vk.svg" alt="vk">
+        </a>
+        <a href="#">
+            <img src="images/tg.svg" alt="telegram">
+        </a>
+        <a href="#">
+            <img src="images/in.svg" alt="instagram">
+        </a>
+    </div>
+    <a href="" id="footer-callback"><img src="images/call.svg" alt="callback"></a>
+    <div id="fixed-bg"></div>
+    <div id="fullpage">
+        <div class="section active">
+            <div class="main-description">
+                <h1 class="w-100">Оператор связи<br>Санкт-Петербурга и Ленинградской области</h1>
+                <div class="d-flex align-items-start">
+                    <img src="images/img-example.png" alt="main-illustration">
+                    <div class="w-100">
+                        <span class="page-title d-block">Стираем границы между<br> <i>виртуальным и реальным</i></span>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five 
+                        </p>
+                        <div class="d-flex align-items-center justify-content-end links-holder"> 
+                            <a href="#" class="big-link d-flex align-items-center justify-content-center">Подключиться</a>
+                            <a href="#" class="link">Подробнее...</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section padding-section price-section">
+            <div class="tab-holder">
+                <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation"><a href="#int" aria-controls="int" role="tab" class="active" data-toggle="tab">Интернет</a></li>
+                    <li role="presentation"><a href="#tel" aria-controls="tel" role="tab" data-toggle="tab">Телефония</a></li>
+                    <li role="presentation"><a href="#data" aria-controls="dat" role="tab" data-toggle="tab">Дата-центры</a></li>
+                </ul>
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="int">
+                        <span class="w-100 page-title d-block text-right">Тарифы на доступ в интернет</span>
+                        <div class="d-flex justify-content-between plans">
+                            <div>
+                                <a href="#" class="medium-link d-flex align-items-center justify-content-center">Подключиться</a>
+                            </div>
+                            <div>
+                                <a href="#" class="medium-link d-flex align-items-center justify-content-center">Подключиться</a>
+                            </div>
+                            <div>
+                                <a href="#" class="medium-link d-flex align-items-center justify-content-center">Подключиться</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="tel">
+                        <span class="page-title d-block text-right two-rows">Тарифы на подключение <i>телефонии</i></span>
+                        <div class="d-flex justify-content-between plans">
+                            <div>
+                                <a href="#" class="medium-link d-flex align-items-center justify-content-center">Подключиться</a>
+                            </div>
+                            <div>
+                                <a href="#" class="medium-link d-flex align-items-center justify-content-center">Подключиться</a>
+                            </div>
+                            <div>
+                                <a href="#" class="medium-link d-flex align-items-center justify-content-center">Подключиться</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="data">
+                        <span class="page-title d-block text-right two-rows">Тарифы на обслуживание<i>удаленных серверов</i></span>
+                        <div class="d-flex justify-content-between plans">
+                            <div>
+                                <a href="#" class="medium-link d-flex align-items-center justify-content-center">Подключиться</a>
+                            </div>
+                            <div>
+                                <a href="#" class="medium-link d-flex align-items-center justify-content-center">Подключиться</a>
+                            </div>
+                            <div>
+                                <a href="#" class="medium-link d-flex align-items-center justify-content-center">Подключиться</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section padding-section">
+            <div class="tab-holder">
+                <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation"><a href="#serv-int" aria-controls="serv-int" role="tab" class="active" data-toggle="tab">Интернет</a></li>
+                    <li role="presentation"><a href="#serv-tel" aria-controls="serv-tel" role="tab" data-toggle="tab">Телефония</a></li>
+                    <li role="presentation"><a href="#serv-data" aria-controls="serv-data" role="tab" data-toggle="tab">Дата-центры</a></li>
+                    <li role="presentation"><a href="#serv-canal" aria-controls="serv-canal" role="tab" data-toggle="tab">Каналы</a></li>
+                    <li role="presentation"><a href="#serv-integr" aria-controls="serv-integr" role="tab" data-toggle="tab">Интеграция</a></li>
+                </ul>
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="serv-int">
+                        <div class="tabbable d-flex justify-content-between">
+                            <ul class="nav nav-tabs d-flex flex-column" role="tablist">
+                                <li role="presentation"><a href="#wide-connect" class="active" aria-controls="wide-connect" role="tab" data-toggle="tab">Широкополосный доступ в интернет</a></li>
+                                <li role="presentation"><a href="#rent" aria-controls="rent" role="tab" data-toggle="tab">Аренда IP-адресов</a></li>
+                                <li role="presentation"><a href="#regist" aria-controls="regist" role="tab" data-toggle="tab">Регистрация и обслуживание AS</a></li>
+                                <li role="presentation"><a href="#transit" aria-controls="transit" role="tab" data-toggle="tab">IP-транзит</a></li>
+                                <li role="presentation"><a href="#ddos" aria-controls="ddos" role="tab" data-toggle="tab">Защита от DDOS</a></li>
+                            </ul>
+                            <div class="hidden-backlink-holder" style="display: none">
+                                <a href="#" class="back-link d-flex align-items-center"><img src="images/nav-img.svg" alt="">Назад к услугам</a>
+                                <p>
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,  with the release of Letraset sheets contnd more recently with desktop
+                                </p>        
+                            </div>
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane active" id="wide-connect">
+                                    <div class="main-description">
+                                        <span class="page-title d-block text-right">Широкополосный <i>доступ в интернет</i></span>
+                                        <p>
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,  with the release of Letraset sheets contnd more recently with desktop
+                                        </p>
+                                        <div class="d-flex align-items-center justify-content-end links-holder"> 
+                                            <a href="#" class="big-link d-flex align-items-center justify-content-center">То что нужно!</a>
+                                            <a href="#" class="link">Подробнее...</a>
+                                        </div>
+                                    </div>
+                                    <div class="detail-block main-description">
+                                        <span class="page-title d-block text-right">Широкополосный <i>доступ в интернет</i></span>
+                                        <img src="images/tab-img-example.jpg" alt="image-example">
+                                        <div class="d-flex align-items-center justify-content-end links-holder"> 
+                                            <a href="#" class="big-link d-flex align-items-center justify-content-center">То что нужно!</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="rent">
+                                    <div class="main-description">
+                                        <span class="page-title d-block text-right">Аренда IP-адресов</span>
+                                        <p>
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,  with the release of Letraset sheets contnd more recently with desktop
+                                        </p>
+                                        <div class="d-flex align-items-center justify-content-end links-holder"> 
+                                            <a href="#" class="big-link d-flex align-items-center justify-content-center">То что нужно!</a>
+                                            <a href="#" class="link">Подробнее...</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="regist">
+                                    <div class="main-description">
+                                        <span class="page-title d-block text-right">Регистрация <i>и обслуживание AS</i></span>
+                                        <p>
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,  with the release of Letraset sheets contnd more recently with desktop
+                                        </p>
+                                        <div class="d-flex align-items-center justify-content-end links-holder"> 
+                                            <a href="#" class="big-link d-flex align-items-center justify-content-center">То что нужно!</a>
+                                            <a href="#" class="link">Подробнее...</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="transit">
+                                    <div class="main-description">
+                                        <span class="page-title d-block text-right">IP-транзит</span>
+                                        <p>
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,  with the release of Letraset sheets contnd more recently with desktop
+                                        </p>
+                                        <div class="d-flex align-items-center justify-content-end links-holder"> 
+                                            <a href="#" class="big-link d-flex align-items-center justify-content-center">То что нужно!</a>
+                                            <a href="#" class="link">Подробнее...</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="ddos">
+                                    <div class="main-description">
+                                        <span class="page-title d-block text-right">Защита от DDOS</span>
+                                        <p>
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,  with the release of Letraset sheets contnd more recently with desktop
+                                        </p>
+                                        <div class="d-flex align-items-center justify-content-end links-holder"> 
+                                            <a href="#" class="big-link d-flex align-items-center justify-content-center">То что нужно!</a>
+                                            <a href="#" class="link">Подробнее...</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="serv-tel">
+                        <span class="page-title d-block text-right two-rows">Тарифы на подключение <i>телефонии</i></span>
+                        <div class="d-flex justify-content-between small-menu">
+                            
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="serv-data">
+                        <span class="page-title d-block text-right two-rows">Тарифы на обслуживание<i>удаленных серверов</i></span>
+                        <div class="d-flex justify-content-between small-menu">
+                            
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="serv-canal">
+                        <span class="page-title d-block text-right two-rows">Тарифы на обслуживание<i>удаленных серверов</i></span>
+                        <div class="d-flex justify-content-between small-menu">
+                            
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="serv-integr">
+                        <span class="page-title d-block text-right two-rows">Тарифы на обслуживание<i>удаленных серверов</i></span>
+                        <div class="d-flex justify-content-between small-menu">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section padding-section about-section">
+            <div class="tab-holder">
+                <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation"><a href="#history" aria-controls="history" role="tab" class="active" data-toggle="tab">История</a></li>
+                    <li role="presentation"><a href="#team" aria-controls="team" role="tab" data-toggle="tab">Команда</a></li>
+                    <li role="presentation"><a href="#projects" aria-controls=projects" role="tab" data-toggle="tab">Проекты</a></li>
+                    <li role="presentation"><a href="#job" aria-controls="job" role="tab" data-toggle="tab">Карьера</a></li>
+                    <li role="presentation"><a href="#contact" aria-controls="contact" role="tab" data-toggle="tab">Контакты</a></li>
+                    <li role="presentation"><a href="#doc" aria-controls="doc" role="tab" data-toggle="tab">Документы</a></li>
+                </ul>
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="history">
+                        <div class="d-flex justify-content-between">
+                            <div class="left-part">
+                                <span class="w-100 page-title d-block text-right m-120">Ю онлайн  - это...</span>
+                                <p>
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,  with the release of Letraset sheets contnd more recently with desktop
+                                </p>        
+                            </div>
+                            <div class="right-part">
+                                <span class="orange orange-title">Наша миссия</span>
+                                <p>
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to 
+                                </p>
+                                <span class="orange orange-title">Наши ценности</span>
+                                <p>
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="team">
+                        <span class="page-title d-block text-right two-rows">Крупные дела не делаются одним человеком,<i> они совершаются командой</i></span>
+                        <div class="d-flex justify-content-between">
+                            <p class="project-text">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,  with the release of Letraset sheets contnd more recently with desktop
+                            </p>
+                            <div class="team-holder d-flex flex-wrap">
+                                <div>
+                                </div>
+                                <div>
+                                    <img src="images/team-image.png" alt="team-member-photo">
+                                    <i>Должность</i>
+                                    <span>Имя Фамилия</span>
+                                </div>
+                                <div>
+                                    <img src="images/team-image.png" alt="team-member-photo">
+                                    <i>Должность</i>
+                                    <span>Имя Фамилия</span>
+                                </div>
+                                <div>
+                                    <img src="images/team-image.png" alt="team-member-photo">
+                                    <i>Должность</i>
+                                    <span>Имя Фамилия</span>
+                                </div>
+                                <div>
+                                    <img src="images/team-image.png" alt="team-member-photo">
+                                    <i>Должность</i>
+                                    <span>Имя Фамилия</span>
+                                </div>
+                                <div>
+                                    <img src="images/team-image.png" alt="team-member-photo">
+                                    <i>Должность</i>
+                                    <span>Имя Фамилия</span>
+                                </div>
+                                <div>
+                                    <img src="images/team-image.png" alt="team-member-photo">
+                                    <i>Должность</i>
+                                    <span>Имя Фамилия</span>
+                                </div>
+                                <div>
+                                    <img src="images/team-image.png" alt="team-member-photo">
+                                    <i>Должность</i>
+                                    <span>Имя Фамилия</span>
+                                </div>
+                                <div>
+                                    <img src="images/team-image.png" alt="team-member-photo">
+                                    <i>Должность</i>
+                                    <span>Имя Фамилия</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="projects">
+                        <span class="page-title d-block text-right two-rows">Когда мы что то делаем, <i>мы учимся</i></span>
+                        <div class="d-flex justify-content-between">
+                            <div class="clients d-flex flex-wrap">
+                                <a href="#"><img src="images/team-image.png" alt="logo"></a>
+                                <a href="#"><img src="images/team-image.png" alt="logo"></a>
+                                <a href="#"><img src="images/team-image.png" alt="logo"></a>
+                                <a href="#"><img src="images/team-image.png" alt="logo"></a>
+                                <a href="#"><img src="images/team-image.png" alt="logo"></a>
+                                <a href="#"><img src="images/team-image.png" alt="logo"></a>
+                            </div>
+                            <p class="project-text">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,  with the release of Letraset sheets contnd more recently with desktop
+                            </p>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="job">
+                        <span class="page-title d-block text-right two-rows text-center">Создаем рабочие <i>места</i></span>
+                        <div class="d-flex justify-content-between">
+                            <p class="project-text m-0">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,  with the release of Letraset sheets contnd more recently with desktop
+                            </p>
+                            <div class="jobs-list d-flex flex-wrap">
+                                <ul class="left-column">
+                                    <li class="orange">Монтажники</li>
+                                    <li><a href="">Монтажник СКС</a></li>
+                                    <li><a href="">Вакансия_1</a></li>
+                                    <li><a href="">Вакансия_2</a></li>
+                                    <li><a href="">Вакансия_3</a></li>
+                                </ul>
+                                <ul class="right-column">
+                                    <li class="orange">Вакансии офиса</li>
+                                    <li><a href="">Монатжник СКС</a></li>
+                                    <li><a href="">Вакансия_1</a></li>
+                                    <li><a href="">Вакансия_2</a></li>
+                                    <li><a href="">Вакансия_3</a></li>
+                                </ul>
+                                <a href="#" class="medium-link text-center d-flex align-items-center justify-content-center">Отправить резмюме</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="contact">
+                        <span class="page-title d-block text-right two-rows text-center">Как нас найти</span>
+                        <div class="d-flex justify-content-between">
+                            <ul class="contact-list">
+                                <li><b>Адрес:</b> Санкт-Петербург, Авиагородок,<br> ул. Взлётная д. 7, лит. А, 3 2 этаж</li>
+                                <li><b>Телефон:</b><a href="tel:+78126704343"> +7 (812) 670-43-43</a></li>
+                                <li><b>Почта:</b><a href="mailto:info@yonl.ru"> info@yonl.ru</a></li>
+                                <li><b>Ежедневно:</b> 10:00-19:00</li>
+                            </ul>
+                            <div class="map-holder">
+                                <!-- insert map code here -->
+                            </div>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="doc">
+                        
+                        <div class="d-flex justify-content-between">
+                            <div class="slider-holder">
+                                <div class="swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide"><img src="images/slider-img.jpg" alt="slider-image"></div>
+                                        <div class="swiper-slide"><img src="images/slider-img.jpg" alt="slider-image"></div>
+                                        <div class="swiper-slide"><img src="images/slider-img.jpg" alt="slider-image"></div>
+                                        <div class="swiper-slide"><img src="images/slider-img.jpg" alt="slider-image"></div>
+                                    </div>
+                                </div>
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                            </div>
+                            <div class="right-column">
+                                <span class="page-title d-block text-right two-rows">Соблюдаем все стандарты</span>
+                                <p class="project-text">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,  with the release of Letraset sheets contnd more recently with desktop
+                                </p>       
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <noscript>Detected missing Javascript support. Certain website features will not operate correctly with Javascript disabled.</noscript>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.1/fullpage.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js"></script>
+    <script type="text/javascript" src="js/main.min.js"></script>
+</body>
+
+</html>
