@@ -31,6 +31,13 @@ function initPage() {
 	        nextEl: '.swiper-button-next',
 	        prevEl: '.swiper-button-prev',
 	      },
+	      pagination: {
+	        el: '.swiper-pagination',
+	        type: 'fraction',
+	      },
 	    });
     });
+    
+    // var zzz = (Swiper.activeIndex - 1) % (Swiper.slides.length - 2);
+    
 }

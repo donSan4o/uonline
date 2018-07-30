@@ -522,24 +522,63 @@
 	.swiper-container {
 		max-width: 380px;
 		height: 538px;	
-		margin-left: 100px;
+		margin-left: 90px;
 		position: relative;
+		@media (max-width: 1600px) {
+			max-width: 320px;
+			height: 450px;
+		}
 	}	
 	.swiper-button-prev,
 	.swiper-button-next {
 		position: absolute;
 		left: 0;
-		top: 60%;
+		top: 49%;
 		width: 33px;
 		height: 33px;
 		background: url(../images/nav-img.svg) no-repeat;
 		background-size: cover;
 		transform: rotate(-90deg);
 	}
-
 	.swiper-button-next {
-		top: 40%;
+		top: 35%;
 		transform: rotate(90deg);
+	}
+	.swiper-pagination-fraction {
+		bottom: auto;
+		left: 0;
+		width: auto;
+		top: 39%;
+		@media (max-width: 1600px) {
+			left: -4px;
+		}
+		span {
+			font-size: 18px;
+		}
+	}
+	.downnload {
+	    float: right;
+    	margin: 40px 145px 20px auto;
+    	color: #fff;
+    	letter-spacing: 4px;
+    	@media (max-width: 1600px) {
+    		letter-spacing: 2px;
+    		margin: 20px 125px 20px auto;
+    	}
+	}
+}
+#doc {
+	.page-title {
+		margin-bottom: 120px;
+		@media (max-width: 1600px) {
+			margin-bottom: 50px;
+		}
+	}
+	.project-text {
+		max-width: 715px;
+		@media (max-width: 1600px) {
+			width: 60%;
+		}
 	}
 }
 
