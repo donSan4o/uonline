@@ -38,6 +38,9 @@ q:before, q:after {
 a:href {
 	color: initial;
 }
+a:focus {
+	outline: none;
+}
 a.link {
 	opacity: 0.5;
 }

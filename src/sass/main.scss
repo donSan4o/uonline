@@ -16,6 +16,12 @@
 .m-0 {
 	margin: 0;
 }
+.white {
+	color: $white;
+}
+.black {
+	color: $black;
+}
 /* main styles */
 #fixed-bg {
 	width: 100vw;
@@ -581,10 +587,149 @@
 		}
 	}
 }
+#choose-plan {
+	.modal-dialog {
+		max-width: 1200px;
+		width: 100%;
+		height: 100%;
+		.modal-content {
+			min-height: 700px;
+			background: url(../images/modal-bg.png) no-repeat;
+			background-size: 100% 100%;
+			.page-title {
+				max-width: 970px;
+				width: 100%;
+				margin: 0 auto 70px;
+			}
+			.modal-header {
+				border: 0;
+				img {
+					margin-right: 150px;
+					margin-top: 40px;
+				}
+			}
+			.modal-body {
+				.choose-plan {
+					max-width: 425px;
+					h2 {
+						font-size: 40px;
+						margin-bottom: 40px;
+					}
+					p {
+						font-size: 19px;
+						line-height: 30px;
+						color: #000;
+						font-family: Roboto;
+						font-weight: 300;
+						margin-bottom: 80px;
+						text-align: left;
+					}
+				}
+			}
+		}
+	}
+}
+#modal-form {
+	.modal-dialog {
+		max-width: 720px;
+		width: 100%;
+		height: 100%;
+		.close-modal {
+			position: absolute;
+			width: 37px;
+			height: 37px;
+			background: url(../images/close.svg) no-repeat;
+			right: 35px;
+			top: 20px;
+		}
+		.modal-content {
+			min-height: 920px;
+			.modal-header {
+				padding-top: 90px;
+				border: 0;
+				.page-title {
+					width: 100%;
+					margin: 0 auto 40px;
+				}
+				p {
+					font-size: 21px;
+					line-height: 30px;
+					color: #313b0f;
+					letter-spacing: 4px;
+				}
+			}
+			.modal-body {
+				.form-group {
+					max-width: 410px;
+					width: 100%;
+					margin: 0 auto 35px; 
+					input {
+						max-width: 250px;
+						height: 45px;
+						flex-shrink: 0;
+						border: 1px solid #313b0f;
+						border-radius: 0;
+						&:focus {
+							border: 1px solid #9bbb30;
+							outline: none;
+							box-shadow: none;
+							-webkit-appearance: none;
+						}
+					}
+					label {
+						font-size: 17px;
+						color: #313b0f;
+					}	
+				}
+				.form-check {
+					max-width: 510px;
+					width: 100%;
+					margin: 0 auto 50px;
+					font-size: 11px;
+					font-family: Roboto;
+					font-weight: 300;
+					padding: 0;
+					letter-spacing: 1px;
+					input {
+  						opacity: 0;
+  						position: absolute;
+  						&:checked + label:before{
+							background: #dda932;
+						}
+  					}
+					label {
+						display: flex;
+						cursor: pointer;
+						z-index: 1;
+						&:before {
+							content: '';
+							width: 21px;
+							height: 21px;
+							display: block;
+							border-radius: 3px;
+							border: 1px solid #dda932;
+							z-index: 1;
+							margin-right: 25px;
+							margin-top: -5px;
+							letter-spacing: 2px;
+						}
+					}
+				}
+			}
+			.modal-footer {
+				padding: 20px 25px;
+				background: #a3b940;
+				p {
+					font: 11px/20px Roboto;
+					font-weight: 300;
+					letter-spacing: 1.5px;
+					color: $white;
 
-
-
-
+				}
+			}
+		}
+	}
+}
 
 @media (max-width: 768px) {
 

@@ -20,8 +20,8 @@
                 <img src="images/logo.svg" alt="logo">
             </a>
             <div class="links d-flex align-items-center">
-                <a href="#">Для дома</a>
-                <a href="#">Для бизнеса</a>
+                <a href="#" data-toggle="modal" data-target="#choose-plan">Для дома</a>
+                <a href="#" data-toggle="modal" data-target="#choose-plan">Для бизнеса</a>
             </div>
         </div>
         <a href="tel:+78126704343" class="phone d-flex align-items-center">+7(812) 670-43-43</a>
@@ -57,7 +57,7 @@
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five 
                         </p>
                         <div class="d-flex align-items-center justify-content-end links-holder"> 
-                            <a href="#" class="big-link d-flex align-items-center justify-content-center">Подключиться</a>
+                            <a href="#" data-toggle="modal" data-target="#modal-form" class="big-link d-flex align-items-center justify-content-center">Подключиться</a>
                             <a href="#" class="link">Подробнее...</a>
                         </div>
                     </div>
@@ -408,7 +408,71 @@
             </div>
         </div>
     </div>
-    
+    <div class="modal fade" id="choose-plan" tabindex="-1" role="dialog" aria-labelledby="choose-plan" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header d-flex justify-content-end">
+                    <img src="images/logo-modal.png" alt="logo">
+                </div>
+                <span class="page-title d-block two-rows">Какое решение<br><b class="d-block text-right">подходит для Вас?</b></span>
+                <div class="modal-body d-flex justify-content-around">
+                    <div class="choose-plan text-center">
+                        <h2 class="white">Для дома</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry, </p>
+                        <a href="" class="big-link d-flex align-items-center justify-content-center m-auto">Подключиться</a>
+                    </div>
+                    <div class="choose-plan text-center">
+                        <h2 class="black">Для бизнеса</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry, </p>
+                        <a href="" class="big-link d-flex align-items-center justify-content-center m-auto">Подключиться</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal-form" tabindex="-1" role="dialog" aria-labelledby="modal-form" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <a href="" class="close-modal" data-dismiss="modal"></a>
+                <div class="modal-header d-flex flex-column align-items-center">
+                    <span class="page-title d-block text-center orange">Верное решение</span>
+                    <p class="text-center">Сейчас мы вам перезвоним и решим,<br> как мы можем Вам помочь</p>
+                </div>
+                <div class="modal-body">
+                    <form method="" action="">
+                        <div class="form-group d-flex align-items-center justify-content-between">
+                            <label for="name">Ваше имя</label>
+                            <input type="text" class="form-control" id="name" value="">
+                        </div>
+                        <div class="form-group d-flex align-items-center justify-content-between">
+                            <label for="phone">Номер<br> телефона</label>
+                            <input type="text" class="form-control" id="phone" placeholder="">
+                        </div>
+                        <div class="form-group d-flex align-items-center justify-content-between">
+                            <label for="email">Ваш<br> e-mail</label>
+                            <input type="email" class="form-control" id="email" placeholder="">
+                        </div>
+                        <div class="form-group d-flex align-items-center justify-content-between">
+                            <label for="company">Название<br> компании</label>
+                            <input type="text" class="form-control" id="company" placeholder="">
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="confirm">
+                            <label class="form-check-label" for="confirm">
+                                Да! Я согласен(а) получать e-mail рассылку о выгодных предложениях
+                            </label>
+                        </div>
+                        <button type="submit" class="big-link d-flex align-items-center justify-content-center m-auto">Подключиться</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <p>
+                        ИнИнформация про обработку персональных данных! Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
     
     <noscript>Detected missing Javascript support. Certain website features will not operate correctly with Javascript disabled.</noscript>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
