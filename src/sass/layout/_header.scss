@@ -7,7 +7,7 @@
     top: 0;
     padding: 0 60px 0 40px;
     @media (max-width: 1600px) {
-        height: 100px;
+        height: 115px;
     }
     .logo-links {
         .logo{
@@ -75,6 +75,9 @@
         height: 100%;
         li {
             margin-left: 2.6vw;
+            @media (max-width: 1600px) {
+                margin-left: 4.3vw;
+            }
             &.active {
                 a {
                     &:after {

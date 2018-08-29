@@ -115,7 +115,7 @@ h1 {
   letter-spacing: 5px; }
   @media (max-width: 1600px) {
     h1 {
-      letter-spacing: 0; } }
+      letter-spacing: 2.5px; } }
 
 h2 {
   font-size: 27px;
@@ -155,7 +155,7 @@ a {
   padding: 0 60px 0 40px; }
   @media (max-width: 1600px) {
     #header {
-      height: 100px; } }
+      height: 115px; } }
   #header .logo-links .logo {
     margin-right: 50px;
     max-width: 230px;
@@ -214,6 +214,9 @@ a {
     height: 100%; }
     #header #myMenu li {
       margin-left: 2.6vw; }
+      @media (max-width: 1600px) {
+        #header #myMenu li {
+          margin-left: 4.3vw; } }
       #header #myMenu li.active a:after {
         content: '';
         display: block;
@@ -257,14 +260,14 @@ a {
   bottom: 7.3vw; }
   @media (max-width: 1600px) {
     #footer-socials {
-      bottom: 50px;
-      left: 60px; } }
+      bottom: 40px;
+      left: 115px; } }
   #footer-socials a {
     display: block;
     margin-right: 135px; }
     @media (max-width: 1600px) {
       #footer-socials a {
-        margin-right: 50px; } }
+        margin-right: 90px; } }
     #footer-socials a:nth-child(1) {
       width: 27px;
       height: 16px;
@@ -288,8 +291,10 @@ a {
   bottom: 7.3vw; }
   @media (max-width: 1600px) {
     #footer-callback {
-      bottom: 50px;
-      right: 60px; } }
+      bottom: 43px;
+      right: 105px;
+      width: 40px;
+      height: 40px; } }
 
 .m-0 {
   margin: 0; }
@@ -325,8 +330,10 @@ a {
   letter-spacing: 7px; }
   @media (max-width: 1600px) {
     .page-title {
-      letter-spacing: 1px;
-      margin-bottom: 30px; } }
+      letter-spacing: 2px;
+      margin-bottom: 45px;
+      font-size: 2.8vw;
+      line-height: 1; } }
   .page-title i {
     font-style: normal;
     display: block;
@@ -334,6 +341,9 @@ a {
 
 .price-section .page-title {
   padding-right: 8.9vw; }
+  @media (max-width: 1600px) {
+    .price-section .page-title {
+      margin-bottom: 75px; } }
   .price-section .page-title.two-rows {
     padding-right: 13vw;
     letter-spacing: 7.2px; }
@@ -381,6 +391,10 @@ a {
   width: 100%;
   margin: 0 auto;
   padding-top: 8.7vw; }
+  @media (max-width: 1600px) {
+    .main-description {
+      padding-top: 10.7vw;
+      padding-left: 80px; } }
   .main-description img {
     max-width: 30.3vw;
     margin-right: 75px;
@@ -389,7 +403,8 @@ a {
         flex-shrink: 0; }
     @media (max-width: 1600px) {
       .main-description img {
-        margin-right: 30px; } }
+        max-width: 32.3vw;
+        margin-right: 10px; } }
   .main-description p {
     max-width: 33vw;
     font-size: 20px;
@@ -400,14 +415,20 @@ a {
     letter-spacing: 2px; }
     @media (max-width: 1600px) {
       .main-description p {
-        max-width: 42vw;
-        font-size: 14px; } }
+        max-width: 39vw;
+        font-size: 16px;
+        line-height: 1.9;
+        margin: 0 auto 55px; } }
   .main-description .links-holder {
     max-width: 28vw;
     margin: 0 auto; }
     .main-description .links-holder .big-link {
       margin-right: 60px;
       color: #fff; }
+      @media (max-width: 1600px) {
+        .main-description .links-holder .big-link {
+          margin-right: 30px;
+          height: 49px; } }
     .main-description .links-holder a {
       font-size: 25px;
       color: #313b0f;
@@ -422,15 +443,22 @@ a {
   padding-top: 170px; }
   @media (max-width: 1600px) {
     .padding-section {
-      padding-top: 100px; } }
+      padding-top: 143px; } }
 
 .nav-tabs {
   border: 0;
   max-width: 1620px;
   margin: 0 auto 4vw;
   padding: 0 10px; }
+  @media (max-width: 1600px) {
+    .nav-tabs {
+      margin: 0 auto 3vw;
+      margin-left: 70px; } }
   .nav-tabs li {
     margin-right: 40px; }
+    @media (max-width: 1600px) {
+      .nav-tabs li {
+        margin-right: 30px; } }
     .nav-tabs li a {
       font-size: 28px;
       color: #313b0f;
@@ -439,7 +467,8 @@ a {
       letter-spacing: 5px; }
       @media (max-width: 1600px) {
         .nav-tabs li a {
-          letter-spacing: 0; } }
+          letter-spacing: 0;
+          font-size: 20px; } }
       .nav-tabs li a:hover:after {
         content: '';
         display: block;
@@ -471,18 +500,33 @@ a {
   .tab-content .plans {
     max-width: 1330px;
     margin: 0 5.8vw 0 auto; }
+    @media (max-width: 1600px) {
+      .tab-content .plans {
+        max-width: 960px;
+        margin: 0 auto; } }
     .tab-content .plans div {
       background-color: rgba(49, 59, 15, 0.6);
       max-width: 27%;
       height: 20vw;
       width: 100%;
       position: relative; }
+      @media (max-width: 1600px) {
+        .tab-content .plans div {
+          max-width: 26%;
+          height: 24.5vw; } }
       .tab-content .plans div .medium-link {
         position: absolute;
         bottom: 35px;
         left: 0;
         right: 0;
         margin: 0 auto; }
+        @media (max-width: 1600px) {
+          .tab-content .plans div .medium-link {
+            bottom: 25px;
+            max-width: 205px;
+            height: 45px;
+            font-size: 20px;
+            letter-spacing: 3px; } }
 
 .hidden-backlink-holder {
   max-width: 640px;
@@ -521,19 +565,34 @@ a {
       .hidden-backlink-holder p {
         font-size: 14px; } }
 
+@media (max-width: 1600px) {
+  #serv-int .page-title {
+    text-align: left !important; } }
+
+@media (max-width: 1600px) {
+  #serv-int .links-holder {
+    margin: 0 auto 0 0; } }
+
 .tabbable .nav-tabs {
   padding: 115px 0 0;
   margin: 0; }
+  @media (max-width: 1600px) {
+    .tabbable .nav-tabs {
+      padding: 130px 0 0 65px; } }
   .tabbable .nav-tabs li {
     margin: 0;
     margin-bottom: 22px; }
+    @media (max-width: 1600px) {
+      .tabbable .nav-tabs li {
+        margin-bottom: 12px; } }
     .tabbable .nav-tabs li a {
       color: #fff;
       font-size: 23px;
       letter-spacing: 3.6px; }
       @media (max-width: 1600px) {
         .tabbable .nav-tabs li a {
-          letter-spacing: 1px; } }
+          letter-spacing: 1px;
+          font-size: 21px; } }
       .tabbable .nav-tabs li a:hover:after {
         width: 3px;
         height: 30px;
@@ -560,7 +619,9 @@ a {
     margin: 0 auto 30px; }
     @media (max-width: 1600px) {
       .tabbable .main-description p {
-        font-size: 16px; } }
+        font-size: 16px;
+        max-width: 46vw;
+        margin: 0 auto 65px; } }
   .tabbable .main-description .link {
     float: right;
     font-size: 25px;
@@ -592,17 +653,25 @@ a {
   letter-spacing: 2px; }
   @media (max-width: 1600px) {
     .about-section p {
-      font-size: 14px; } }
+      font-size: 16px;
+      letter-spacing: 2px;
+      line-height: 1.9; } }
 
 .about-section .m-120 {
   margin-bottom: 120px; }
+
+@media (max-width: 1600px) {
+  .about-section .page-title {
+    margin-bottom: 65px;
+    text-align: left !important; } }
 
 .left-part {
   max-width: 815px;
   width: 100%; }
   @media (max-width: 1600px) {
     .left-part {
-      width: 45%; } }
+      width: 45%;
+      padding-left: 70px; } }
 
 .right-part {
   max-width: 645px;
@@ -621,7 +690,7 @@ a {
   letter-spacing: 5px; }
   @media (max-width: 1600px) {
     .orange-title {
-      letter-spacing: 1px; } }
+      letter-spacing: 5px; } }
 
 .orange-title ~ p {
   font-size: 20px;
@@ -632,7 +701,10 @@ a {
   letter-spacing: 2px; }
   @media (max-width: 1600px) {
     .orange-title ~ p {
-      font-size: 14px; } }
+      font-size: 15px;
+      letter-spacing: 3px;
+      line-height: 2;
+      margin-bottom: 25px; } }
 
 .project-text {
   max-width: 656px;
@@ -640,7 +712,22 @@ a {
   padding: 0 10px; }
   @media (max-width: 1600px) {
     .project-text {
-      width: 45%; } }
+      width: 55%;
+      padding-left: 70px; } }
+
+@media (max-width: 1600px) {
+  #team .page-title {
+    margin-bottom: 25px;
+    text-align: right !important;
+    margin-right: 70px; } }
+
+@media (max-width: 1600px) {
+  #projects .page-title {
+    margin-bottom: 50px;
+    text-align: right !important;
+    margin-right: 30%; }
+    #projects .page-title i {
+      margin-right: -100px; } }
 
 .team-holder {
   padding-top: 10px; }
@@ -650,6 +737,9 @@ a {
     text-align: center;
     margin-bottom: 20px;
     margin-right: 20px; }
+    @media (max-width: 1600px) {
+      .team-holder div {
+        max-width: 110px; } }
     .team-holder div img {
       border-radius: 50%;
       overflow: hidden;
@@ -664,6 +754,9 @@ a {
       font-size: 17px;
       color: #313b0f;
       letter-spacing: 2px; }
+      @media (max-width: 1600px) {
+        .team-holder div span {
+          font-size: 15px; } }
 
 .clients {
   max-width: 865px;
@@ -672,7 +765,8 @@ a {
       flex-shrink: 0; }
   @media (max-width: 1600px) {
     .clients {
-      width: 45%; } }
+      width: 50%;
+      margin-left: 70px; } }
   .clients a {
     display: -ms-flexbox;
     display: flex;
@@ -689,8 +783,10 @@ a {
     border-radius: 3px; }
     @media (max-width: 1600px) {
       .clients a {
-        max-width: 185px;
-        margin: 0 auto 5px; } }
+        max-width: 200px;
+        margin: 0 5px 5px;
+        height: 122px;
+        min-height: 122px; } }
 
 .jobs-list ul {
   width: 50%;
