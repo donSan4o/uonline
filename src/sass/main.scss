@@ -501,6 +501,27 @@
 		}
 	}
 }
+#job {
+	.page-title {
+		@media (max-width: 1600px) {
+			margin: 0 auto 90px;
+			text-align: center !important;
+			display: block !important;
+			i {
+				display: inline-block;
+				margin-left: 0px;
+			}
+		}
+	}
+}
+#contact {
+	.page-title {
+		@media (max-width: 1600px) {
+			margin: 0 auto 85px;
+			text-align: center !important;
+		}
+	}
+}
 .team-holder {
 	padding-top: 10px;
 	div {
@@ -562,12 +583,15 @@
 	}
 }
 .jobs-list {
+	@media (max-width: 1600px) {
+		margin-right: 65px;
+	}
 	ul {
 		width: 50%;
 		text-align: right;
 		margin-bottom: 100px;
 		@media (max-width: 1600px) {
-			margin-bottom: 30px;
+			margin-bottom: 10px;
 		}
 		.orange {
 			font-size: 28px;
@@ -576,16 +600,18 @@
 			margin-bottom: 20px;
 			@media (max-width: 1600px) {
 				letter-spacing: 1px;
+				font-size: 22px;
 			}
 		}
 		li {
-			margin-bottom: 30px;
+			margin-bottom: 25px;
 			a {
 				font-size: 28px;
 				letter-spacing: 5px;
 				color: $darkgreen;
 				@media (max-width: 1600px) {
-					letter-spacing: 1px;
+					letter-spacing: 3px;
+					font-size: 22px;
 				}
 			}
 		}
@@ -593,16 +619,28 @@
 	.medium-link {
 		max-width: 290px;
 		height: 66px;
+		@media (max-width: 1600px) {
+		    max-width: 240px;
+    		height: 55px;
+    		margin: 0 0 0 auto;
+    		font-size: 19px;
+		}
 	}
 }
 .contact-list {
+	@media (max-width: 1600px) {
+		margin-left: 70px;
+	}
 	li {
 		font-size: 28px;
 		color: $darkgreen;
 		margin-bottom: 30px;
 		letter-spacing: 5px;
 		@media (max-width: 1600px) {
-			letter-spacing: 1px;
+			font-size: 22px;
+			letter-spacing: 4px;
+			line-height: 1.8;
+			margin-bottom: 5px;
 		}
 		a {
 			color: $darkgreen;
@@ -611,6 +649,9 @@
 			font-size: 28px;
 			color: $white;
 			font-family: 'FuturaBook';
+			@media (max-width: 1600px) {
+				font-size: 22px;
+			}
 		}
 	}
 }
@@ -621,6 +662,7 @@
 	background: rgba(0,0,0,0.4);
 	@media (max-width: 1600px) {
 		width: 50%;
+		height: 250px;
 	}
 }
 
@@ -633,8 +675,9 @@
 		margin-left: 90px;
 		position: relative;
 		@media (max-width: 1600px) {
-			max-width: 320px;
-			height: 450px;
+			max-width: 300px;
+			height: 415px;
+			margin-left: 130px;
 		}
 	}	
 	.swiper-button-prev,
@@ -647,10 +690,19 @@
 		background: url(../images/nav-img.svg) no-repeat;
 		background-size: cover;
 		transform: rotate(-90deg);
+		@media (max-width: 1600px) {
+		    left: 70px;
+		    top: 47.5%;
+		    width: 34px;
+		    height: 34px;
+		}
 	}
 	.swiper-button-next {
 		top: 35%;
 		transform: rotate(90deg);
+		@media (max-width: 1600px) {
+			top: 27%;
+		}
 	}
 	.swiper-pagination-fraction {
 		bottom: auto;
@@ -658,10 +710,14 @@
 		width: auto;
 		top: 39%;
 		@media (max-width: 1600px) {
-			left: -4px;
+			left: 65px;
+			top: 34%;
 		}
 		span {
 			font-size: 18px;
+			@media (max-width: 1600px) {
+				font-size: 17px;
+			}
 		}
 	}
 	.downnload {
@@ -671,7 +727,7 @@
     	letter-spacing: 4px;
     	@media (max-width: 1600px) {
     		letter-spacing: 2px;
-    		margin: 20px 125px 20px auto;
+		    margin: 13px 105px 20px auto;
     	}
 	}
 }
@@ -679,13 +735,14 @@
 	.page-title {
 		margin-bottom: 120px;
 		@media (max-width: 1600px) {
-			margin-bottom: 50px;
+			margin-bottom: 32px;
 		}
 	}
 	.project-text {
 		max-width: 715px;
 		@media (max-width: 1600px) {
-			width: 60%;
+			width: 76%;
+			padding: 0;
 		}
 	}
 }

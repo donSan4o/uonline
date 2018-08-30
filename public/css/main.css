@@ -729,6 +729,20 @@ a {
     #projects .page-title i {
       margin-right: -100px; } }
 
+@media (max-width: 1600px) {
+  #job .page-title {
+    margin: 0 auto 90px;
+    text-align: center !important;
+    display: block !important; }
+    #job .page-title i {
+      display: inline-block;
+      margin-left: 0px; } }
+
+@media (max-width: 1600px) {
+  #contact .page-title {
+    margin: 0 auto 85px;
+    text-align: center !important; } }
+
 .team-holder {
   padding-top: 10px; }
   .team-holder div {
@@ -788,13 +802,17 @@ a {
         height: 122px;
         min-height: 122px; } }
 
+@media (max-width: 1600px) {
+  .jobs-list {
+    margin-right: 65px; } }
+
 .jobs-list ul {
   width: 50%;
   text-align: right;
   margin-bottom: 100px; }
   @media (max-width: 1600px) {
     .jobs-list ul {
-      margin-bottom: 30px; } }
+      margin-bottom: 10px; } }
   .jobs-list ul .orange {
     font-size: 28px;
     letter-spacing: 5px;
@@ -802,20 +820,32 @@ a {
     margin-bottom: 20px; }
     @media (max-width: 1600px) {
       .jobs-list ul .orange {
-        letter-spacing: 1px; } }
+        letter-spacing: 1px;
+        font-size: 22px; } }
   .jobs-list ul li {
-    margin-bottom: 30px; }
+    margin-bottom: 25px; }
     .jobs-list ul li a {
       font-size: 28px;
       letter-spacing: 5px;
       color: #313b0f; }
       @media (max-width: 1600px) {
         .jobs-list ul li a {
-          letter-spacing: 1px; } }
+          letter-spacing: 3px;
+          font-size: 22px; } }
 
 .jobs-list .medium-link {
   max-width: 290px;
   height: 66px; }
+  @media (max-width: 1600px) {
+    .jobs-list .medium-link {
+      max-width: 240px;
+      height: 55px;
+      margin: 0 0 0 auto;
+      font-size: 19px; } }
+
+@media (max-width: 1600px) {
+  .contact-list {
+    margin-left: 70px; } }
 
 .contact-list li {
   font-size: 28px;
@@ -824,13 +854,19 @@ a {
   letter-spacing: 5px; }
   @media (max-width: 1600px) {
     .contact-list li {
-      letter-spacing: 1px; } }
+      font-size: 22px;
+      letter-spacing: 4px;
+      line-height: 1.8;
+      margin-bottom: 5px; } }
   .contact-list li a {
     color: #313b0f; }
   .contact-list li b {
     font-size: 28px;
     color: #fff;
     font-family: 'FuturaBook'; }
+    @media (max-width: 1600px) {
+      .contact-list li b {
+        font-size: 22px; } }
 
 .map-holder {
   max-width: 805px;
@@ -839,7 +875,8 @@ a {
   background: rgba(0, 0, 0, 0.4); }
   @media (max-width: 1600px) {
     .map-holder {
-      width: 50%; } }
+      width: 50%;
+      height: 250px; } }
 
 /*slider styles*/
 .slider-holder {
@@ -851,8 +888,9 @@ a {
     position: relative; }
     @media (max-width: 1600px) {
       .slider-holder .swiper-container {
-        max-width: 320px;
-        height: 450px; } }
+        max-width: 300px;
+        height: 415px;
+        margin-left: 130px; } }
   .slider-holder .swiper-button-prev,
   .slider-holder .swiper-button-next {
     position: absolute;
@@ -863,9 +901,19 @@ a {
     background: url(../images/nav-img.svg) no-repeat;
     background-size: cover;
     transform: rotate(-90deg); }
+    @media (max-width: 1600px) {
+      .slider-holder .swiper-button-prev,
+      .slider-holder .swiper-button-next {
+        left: 70px;
+        top: 47.5%;
+        width: 34px;
+        height: 34px; } }
   .slider-holder .swiper-button-next {
     top: 35%;
     transform: rotate(90deg); }
+    @media (max-width: 1600px) {
+      .slider-holder .swiper-button-next {
+        top: 27%; } }
   .slider-holder .swiper-pagination-fraction {
     bottom: auto;
     left: 0;
@@ -873,9 +921,13 @@ a {
     top: 39%; }
     @media (max-width: 1600px) {
       .slider-holder .swiper-pagination-fraction {
-        left: -4px; } }
+        left: 65px;
+        top: 34%; } }
     .slider-holder .swiper-pagination-fraction span {
       font-size: 18px; }
+      @media (max-width: 1600px) {
+        .slider-holder .swiper-pagination-fraction span {
+          font-size: 17px; } }
   .slider-holder .downnload {
     float: right;
     margin: 40px 145px 20px auto;
@@ -884,19 +936,20 @@ a {
     @media (max-width: 1600px) {
       .slider-holder .downnload {
         letter-spacing: 2px;
-        margin: 20px 125px 20px auto; } }
+        margin: 13px 105px 20px auto; } }
 
 #doc .page-title {
   margin-bottom: 120px; }
   @media (max-width: 1600px) {
     #doc .page-title {
-      margin-bottom: 50px; } }
+      margin-bottom: 32px; } }
 
 #doc .project-text {
   max-width: 715px; }
   @media (max-width: 1600px) {
     #doc .project-text {
-      width: 60%; } }
+      width: 76%;
+      padding: 0; } }
 
 #choose-plan .modal-dialog {
   max-width: 1200px;
