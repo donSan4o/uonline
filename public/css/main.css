@@ -121,6 +121,14 @@ h1 {
       font-size: 18px;
       letter-spacing: 2.5px;
       margin-bottom: 70px; } }
+  @media (max-width: 750px) {
+    h1 {
+      margin-bottom: 35px; } }
+  @media (max-width: 640px) {
+    h1 {
+      font-size: 14px;
+      margin-bottom: 15px;
+      letter-spacing: 1px; } }
 
 h2 {
   font-size: 27px;
@@ -154,7 +162,7 @@ a {
   position: fixed;
   height: 140px;
   width: 100%;
-  z-index: 9;
+  z-index: 99;
   text-align: center;
   top: 0;
   padding: 0 60px 0 40px; }
@@ -170,6 +178,11 @@ a {
     @media (max-width: 992px) {
       #header .menu-mobile {
         display: block; } }
+    @media (max-width: 750px) {
+      #header .menu-mobile {
+        width: 33px;
+        height: 18px;
+        margin-left: 20px; } }
   @media (max-width: 1600px) {
     #header {
       height: 115px; } }
@@ -179,6 +192,9 @@ a {
       padding: 40px 0 0 0;
       -ms-flex-align: start !important;
           align-items: flex-start !important; } }
+  @media (max-width: 750px) {
+    #header {
+      padding: 10px 0 0 0; } }
   @media (max-width: 992px) {
     #header .logo-links {
       -ms-flex-direction: column;
@@ -186,6 +202,9 @@ a {
       margin: 0 auto;
       max-width: 350px;
       width: 100%; } }
+  @media (max-width: 750px) {
+    #header .logo-links {
+      max-width: 200px; } }
   #header .logo-links .logo {
     margin-right: 50px;
     max-width: 230px;
@@ -201,6 +220,10 @@ a {
         margin-right: 0px;
         max-width: 320px;
         margin-bottom: 20px; } }
+    @media (max-width: 750px) {
+      #header .logo-links .logo {
+        max-width: 100%;
+        margin-bottom: 10px; } }
     #header .logo-links .logo img {
       width: 100%;
       -ms-flex-negative: 0;
@@ -230,6 +253,10 @@ a {
           font-size: 19px;
           margin-right: 0px;
           letter-spacing: 4px; } }
+      @media (max-width: 750px) {
+        #header .logo-links .links a {
+          font-size: 12px;
+          letter-spacing: 2px; } }
       #header .logo-links .links a:last-child {
         margin-right: 0; }
       #header .logo-links .links a:hover {
@@ -275,7 +302,12 @@ a {
         padding: 90px 25px 0;
         -ms-flex-align: start !important;
             align-items: flex-start !important;
-        transition: all 0.3s; } }
+        transition: all 0.3s;
+        z-index: 99; } }
+    @media (max-width: 640px) {
+      #header #myMenu {
+        width: 280px;
+        left: -280px; } }
     #header #myMenu li {
       margin-left: 2.6vw; }
       @media (max-width: 1600px) {
@@ -318,11 +350,17 @@ a {
           left: 0;
           right: 0;
           margin: 0 auto; }
+  #header .show-menu {
+    left: 0 !important; }
 
 #modal-form .modal-dialog {
   max-width: 720px;
   width: 100%;
   height: 100%; }
+  @media (max-width: 640px) {
+    #modal-form .modal-dialog {
+      max-width: 400px;
+      height: auto; } }
   #modal-form .modal-dialog .close-modal {
     position: absolute;
     width: 37px;
@@ -330,23 +368,44 @@ a {
     background: url(../images/close.svg) no-repeat;
     right: 35px;
     top: 20px; }
+    @media (max-width: 640px) {
+      #modal-form .modal-dialog .close-modal {
+        width: 20px;
+        height: 20px;
+        right: 20px; } }
   #modal-form .modal-dialog .modal-content {
     min-height: 920px; }
+    @media (max-width: 640px) {
+      #modal-form .modal-dialog .modal-content {
+        min-height: auto; } }
     #modal-form .modal-dialog .modal-content .modal-header {
       padding-top: 90px;
       border: 0; }
+      @media (max-width: 640px) {
+        #modal-form .modal-dialog .modal-content .modal-header {
+          padding-top: 30px; } }
       #modal-form .modal-dialog .modal-content .modal-header .page-title {
         width: 100%;
         margin: 0 auto 40px; }
+        @media (max-width: 640px) {
+          #modal-form .modal-dialog .modal-content .modal-header .page-title {
+            margin: 0 auto 15px; } }
       #modal-form .modal-dialog .modal-content .modal-header p {
         font-size: 21px;
         line-height: 30px;
         color: #313b0f;
         letter-spacing: 4px; }
+        @media (max-width: 640px) {
+          #modal-form .modal-dialog .modal-content .modal-header p {
+            font-size: 14px;
+            line-height: 16px; } }
     #modal-form .modal-dialog .modal-content .modal-body .form-group {
       max-width: 410px;
       width: 100%;
       margin: 0 auto 35px; }
+      @media (max-width: 640px) {
+        #modal-form .modal-dialog .modal-content .modal-body .form-group {
+          margin: 0 auto 15px; } }
       #modal-form .modal-dialog .modal-content .modal-body .form-group input {
         max-width: 250px;
         height: 45px;
@@ -354,6 +413,9 @@ a {
             flex-shrink: 0;
         border: 1px solid #313b0f;
         border-radius: 0; }
+        @media (max-width: 640px) {
+          #modal-form .modal-dialog .modal-content .modal-body .form-group input {
+            height: 35px; } }
         #modal-form .modal-dialog .modal-content .modal-body .form-group input:focus {
           border: 1px solid #9bbb30;
           outline: none;
@@ -401,6 +463,76 @@ a {
         letter-spacing: 1.5px;
         color: #fff; }
 
+#choose-plan .modal-dialog {
+  max-width: 1200px;
+  width: 100%;
+  height: 100%; }
+  @media (max-width: 992px) {
+    #choose-plan .modal-dialog {
+      max-width: 600px; } }
+  #choose-plan .modal-dialog .modal-content {
+    min-height: 700px;
+    background: url(../images/modal-bg.png) no-repeat;
+    background-size: 100% 100%; }
+    @media (max-width: 640px) {
+      #choose-plan .modal-dialog .modal-content {
+        max-width: 400px;
+        min-height: auto;
+        padding-bottom: 30px; } }
+    #choose-plan .modal-dialog .modal-content .page-title {
+      max-width: 970px;
+      width: 100%;
+      margin: 0 auto 70px; }
+      @media (max-width: 992px) {
+        #choose-plan .modal-dialog .modal-content .page-title {
+          text-align: center; }
+          #choose-plan .modal-dialog .modal-content .page-title b {
+            text-align: center !important; } }
+    #choose-plan .modal-dialog .modal-content .modal-header {
+      border: 0; }
+      #choose-plan .modal-dialog .modal-content .modal-header img {
+        margin-right: 150px;
+        margin-top: 40px; }
+        @media (max-width: 992px) {
+          #choose-plan .modal-dialog .modal-content .modal-header img {
+            margin-right: 0;
+            max-width: 150px;
+            margin-top: 20px; } }
+    #choose-plan .modal-dialog .modal-content .modal-body .choose-plan {
+      max-width: 425px; }
+      @media (max-width: 992px) {
+        #choose-plan .modal-dialog .modal-content .modal-body .choose-plan {
+          max-width: 45%; } }
+      #choose-plan .modal-dialog .modal-content .modal-body .choose-plan h2 {
+        font-size: 40px;
+        margin-bottom: 40px; }
+        @media (max-width: 992px) {
+          #choose-plan .modal-dialog .modal-content .modal-body .choose-plan h2 {
+            font-size: 28px;
+            margin-bottom: 20px; } }
+      #choose-plan .modal-dialog .modal-content .modal-body .choose-plan p {
+        font-size: 19px;
+        line-height: 30px;
+        color: #000;
+        font-family: Roboto;
+        font-weight: 300;
+        margin-bottom: 80px;
+        text-align: left; }
+        @media (max-width: 992px) {
+          #choose-plan .modal-dialog .modal-content .modal-body .choose-plan p {
+            text-align: center; } }
+      @media (max-width: 992px) {
+        #choose-plan .modal-dialog .modal-content .modal-body .choose-plan .big-link {
+          width: 210px;
+          height: 55px;
+          letter-spacing: 3px; } }
+      @media (max-width: 640px) {
+        #choose-plan .modal-dialog .modal-content .modal-body .choose-plan .big-link {
+          width: 150px;
+          height: 40px;
+          letter-spacing: 1px;
+          font-size: 18px; } }
+
 #footer-socials {
   position: fixed;
   height: auto;
@@ -432,6 +564,9 @@ a {
     @media (max-width: 992px) {
       #footer-socials a {
         margin-right: 140px; } }
+    @media (max-width: 640px) {
+      #footer-socials a {
+        margin-right: 25%; } }
     #footer-socials a:nth-child(1) {
       width: 27px;
       height: 16px;
@@ -491,6 +626,15 @@ a {
 .mobile-only {
   display: none !important; }
 
+.fader {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 98; }
+
 /* main styles */
 #fixed-bg {
   width: 100vw;
@@ -502,7 +646,8 @@ a {
   background-size: cover; }
   @media (max-width: 992px) {
     #fixed-bg {
-      background: url(../images/tablet-bg.png) no-repeat; } }
+      background: url(../images/tablet-bg.png) no-repeat;
+      background-size: 100% 100%; } }
 
 #fullpage {
   z-index: 2; }
@@ -512,13 +657,19 @@ a {
   @media (max-width: 992px) {
     .section {
       padding: 210px 0 0; } }
+  @media (max-width: 750px) {
+    .section {
+      padding: 120px 0 0; } }
+  @media (max-width: 640px) {
+    .section {
+      padding: 100px 0 0; } }
 
 .page-title {
   font-size: 3.1vw;
   line-height: 1.1;
   color: #313b0f;
   font-family: FuturaBook;
-  margin-bottom: 60px;
+  margin-bottom: 35px;
   letter-spacing: 7px; }
   @media (max-width: 1600px) {
     .page-title {
@@ -531,6 +682,17 @@ a {
       letter-spacing: 2px;
       margin-bottom: 50px;
       font-size: 28px; } }
+  @media (max-width: 750px) {
+    .page-title {
+      margin-bottom: 25px;
+      font-size: 22px; } }
+  @media (max-width: 640px) {
+    .page-title {
+      margin-bottom: 15px;
+      font-size: 18px;
+      display: -ms-flexbox;
+      display: flex;
+      text-align: center; } }
   @media (min-width: 992px) and (max-width: 1300px) {
     .page-title {
       margin-bottom: 30px; } }
@@ -538,6 +700,9 @@ a {
     font-style: normal;
     display: block;
     margin-left: 105px; }
+    @media (max-width: 750px) {
+      .page-title i {
+        margin-left: 0; } }
 
 .price-section .page-title {
   padding-right: 8.9vw; }
@@ -549,6 +714,14 @@ a {
       padding: 0;
       text-align: center !important;
       font-size: 36px; } }
+  @media (max-width: 750px) {
+    .price-section .page-title {
+      font-size: 28px;
+      margin-bottom: 35px; } }
+  @media (max-width: 640px) {
+    .price-section .page-title {
+      font-size: 22px;
+      margin-bottom: 15px; } }
   .price-section .page-title.two-rows {
     padding-right: 13vw;
     letter-spacing: 7.2px; }
@@ -603,6 +776,14 @@ a {
   @media (max-width: 992px) {
     .main-description {
       padding: 0 100px; } }
+  @media (max-width: 750px) {
+    .main-description {
+      padding-left: 50px;
+      padding-right: 20px; } }
+  @media (max-width: 640px) {
+    .main-description {
+      padding-left: 20px;
+      padding-right: 20px; } }
   @media (min-width: 992px) and (max-width: 1300px) {
     .main-description {
       padding: 120px 0 0; } }
@@ -620,10 +801,10 @@ a {
       .main-description img {
         display: none; } }
   .main-description p {
-    max-width: 33vw;
+    max-width: 45vw;
     font-size: 20px;
     line-height: 2;
-    margin: 0 auto 95px;
+    margin: 0 auto 55px;
     font-family: Roboto;
     font-weight: 400;
     letter-spacing: 2px; }
@@ -638,6 +819,17 @@ a {
         max-width: 480px;
         width: 100%;
         margin: 0 0 70px; } }
+    @media (max-width: 750px) {
+      .main-description p {
+        max-width: 100%;
+        width: 100%;
+        margin: 0 0 25px;
+        font-size: 14px; } }
+    @media (max-width: 640px) {
+      .main-description p {
+        margin: 0px 0 15px;
+        font-size: 14px;
+        line-height: 1.4; } }
     @media (min-width: 992px) and (max-width: 1300px) {
       .main-description p {
         max-width: 100%;
@@ -670,6 +862,15 @@ a {
           margin: 0;
           font-size: 20px;
           letter-spacing: 4px; } }
+      @media (max-width: 640px) {
+        .main-description .links-holder .big-link {
+          max-width: 150px;
+          height: 40px;
+          width: 100%;
+          margin: 0;
+          font-size: 16px;
+          letter-spacing: 1px;
+          margin-right: 10px; } }
     .main-description .links-holder a {
       font-size: 25px;
       color: #313b0f;
@@ -679,6 +880,10 @@ a {
           letter-spacing: 0; } }
       .main-description .links-holder a:hover {
         opacity: 1; }
+      @media (max-width: 640px) {
+        .main-description .links-holder a {
+          font-size: 14px;
+          letter-spacing: 2px; } }
     @media (min-width: 992px) and (max-width: 1300px) {
       .main-description .links-holder {
         max-width: 40vw; } }
@@ -691,6 +896,12 @@ a {
   @media (max-width: 992px) {
     .padding-section {
       padding-top: 210px; } }
+  @media (max-width: 750px) {
+    .padding-section {
+      padding-top: 120px; } }
+  @media (max-width: 640px) {
+    .padding-section {
+      padding-top: 110px; } }
 
 .nav-tabs {
   border: 0;
@@ -706,6 +917,12 @@ a {
       margin: 0 auto 70px;
       -ms-flex-pack: center;
           justify-content: center; } }
+  @media (max-width: 750px) {
+    .nav-tabs {
+      margin: 0 auto 35px; } }
+  @media (max-width: 640px) {
+    .nav-tabs {
+      margin: 0 auto 15px; } }
   .nav-tabs li {
     margin-right: 40px; }
     .nav-tabs li:last-child {
@@ -726,6 +943,12 @@ a {
       @media (max-width: 992px) {
         .nav-tabs li a {
           font-size: 28px; } }
+      @media (max-width: 750px) {
+        .nav-tabs li a {
+          font-size: 22px; } }
+      @media (max-width: 640px) {
+        .nav-tabs li a {
+          font-size: 16px; } }
       .nav-tabs li a:hover:after {
         content: '';
         display: block;
@@ -788,6 +1011,12 @@ a {
           max-width: 100%;
           height: 459px;
           margin: 0; } }
+      @media (max-width: 640px) {
+        .tab-content .tab-pane .plans .swiper-slide {
+          width: 180px !important;
+          max-width: 100%;
+          height: 270px;
+          margin: 0; } }
       .tab-content .tab-pane .plans .swiper-slide .medium-link {
         position: absolute;
         bottom: 35px;
@@ -801,6 +1030,13 @@ a {
             height: 45px;
             font-size: 20px;
             letter-spacing: 3px; } }
+        @media (max-width: 640px) {
+          .tab-content .tab-pane .plans .swiper-slide .medium-link {
+            bottom: 15px;
+            max-width: 150px;
+            height: 40px;
+            font-size: 16px;
+            letter-spacing: 2px; } }
 
 .hidden-backlink-holder {
   max-width: 640px;
@@ -823,6 +1059,11 @@ a {
       .hidden-backlink-holder a {
         letter-spacing: 1px;
         margin-bottom: 60px; } }
+    @media (max-width: 640px) {
+      .hidden-backlink-holder a {
+        font-size: 20px;
+        letter-spacing: 1px;
+        margin-bottom: 15px; } }
     @media (min-width: 992px) and (max-width: 1300px) {
       .hidden-backlink-holder a {
         margin-bottom: 25px; } }
@@ -831,6 +1072,10 @@ a {
       height: 33px;
       margin-right: 5px;
       margin-top: -5px; }
+      @media (max-width: 640px) {
+        .hidden-backlink-holder a img {
+          width: 20px;
+          height: 20px; } }
   .hidden-backlink-holder p {
     font-size: 20px;
     line-height: 2;
@@ -845,6 +1090,11 @@ a {
       .hidden-backlink-holder p {
         font-size: 14px;
         margin-bottom: 70px; } }
+    @media (max-width: 640px) {
+      .hidden-backlink-holder p {
+        font-size: 12px;
+        margin-bottom: 15px;
+        line-height: 1.4; } }
     @media (min-width: 992px) and (max-width: 1300px) {
       .hidden-backlink-holder p {
         margin-bottom: 25px; } }
@@ -852,6 +1102,11 @@ a {
 @media (max-width: 1600px) {
   #serv-int .page-title {
     text-align: left !important; } }
+
+@media (max-width: 640px) {
+  #serv-int .page-title {
+    text-align: center !important;
+    margin: 15px 0; } }
 
 @media (max-width: 1600px) {
   #serv-int .links-holder {
@@ -906,6 +1161,16 @@ a {
         font-size: 16px;
         max-width: 46vw;
         margin: 0 auto 65px; } }
+    @media (max-width: 640px) {
+      .tabbable .main-description p {
+        font-size: 14px;
+        margin: 0 auto 15px; } }
+    @media (max-width: 370px) {
+      .tabbable .main-description p {
+        max-height: 130px;
+        overflow-y: scroll;
+        font-size: 14px;
+        margin: 0 auto 15px; } }
   .tabbable .main-description .link {
     float: right;
     font-size: 25px;
@@ -914,6 +1179,10 @@ a {
     @media (max-width: 1600px) {
       .tabbable .main-description .link {
         letter-spacing: 1px; } }
+    @media (max-width: 640px) {
+      .tabbable .main-description .link {
+        font-size: 14px;
+        letter-spacing: 2px; } }
 
 .tabbable .detail-block {
   display: none; }
@@ -927,7 +1196,12 @@ a {
 
 @media (max-width: 992px) {
   .services > .tab-content {
-    padding: 0 90px; }
+    padding: 0 90px; } }
+  @media (max-width: 992px) and (max-width: 640px) {
+    .services > .tab-content {
+      padding: 0 20px; } }
+
+@media (max-width: 992px) {
     .services > .tab-content .tab-pane {
       margin: 0;
       width: 100%; }
@@ -937,23 +1211,49 @@ a {
         justify-content: flex-start;
     margin-bottom: 35px;
     -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap; }
+        flex-wrap: nowrap; } }
+  @media (max-width: 992px) and (max-width: 640px) {
+    .services > .nav-tabs {
+      margin-bottom: 15px; } }
+
+@media (max-width: 992px) {
     .services > .nav-tabs li {
       margin-right: 60px;
       -ms-flex-negative: 0;
-          flex-shrink: 0; }
+          flex-shrink: 0; } }
+    @media (max-width: 992px) and (max-width: 640px) {
+      .services > .nav-tabs li {
+        margin-right: 30px; } }
+
+@media (max-width: 992px) {
       .services > .nav-tabs li a {
-        font-size: 26px; }
+        font-size: 26px; } }
+      @media (max-width: 992px) and (max-width: 640px) {
+        .services > .nav-tabs li a {
+          font-size: 16px; } }
+
+@media (max-width: 992px) {
   .services .tabbable {
     -ms-flex-direction: column;
         flex-direction: column; }
     .services .tabbable .nav-tabs {
       padding: 0; }
       .services .tabbable .nav-tabs li {
-        margin-bottom: 20px; }
+        margin-bottom: 20px; } }
+      @media (max-width: 992px) and (max-width: 640px) {
+        .services .tabbable .nav-tabs li {
+          margin-bottom: 0; } }
+
+@media (max-width: 992px) {
         .services .tabbable .nav-tabs li a {
           font-size: 18px;
-          letter-spacing: 4px; }
+          letter-spacing: 4px; } }
+        @media (max-width: 992px) and (max-width: 640px) {
+          .services .tabbable .nav-tabs li a {
+            font-size: 12px;
+            letter-spacing: 0; } }
+
+@media (max-width: 992px) {
           .services .tabbable .nav-tabs li a:after {
             display: none; }
     .services .tabbable .main-description {
@@ -969,21 +1269,46 @@ a {
 
 @media (max-width: 992px) {
   .about-section .services .tab-content {
-    padding: 0 0 0 100px; }
+    padding: 0 0 0 100px; } }
+  @media (max-width: 992px) and (max-width: 640px) {
+    .about-section .services .tab-content {
+      padding: 0 20px; } }
+
+@media (max-width: 992px) {
     .about-section .services .tab-content .tab-pane > div {
       -ms-flex-direction: column;
           flex-direction: column; }
     .about-section .services .tab-content .tab-pane .left-part {
       width: 100%;
-      padding: 0 50px 0 0; }
+      padding: 0 50px 0 0; } }
+    @media (max-width: 992px) and (max-width: 640px) {
+      .about-section .services .tab-content .tab-pane .left-part {
+        padding: 0; } }
+
+@media (max-width: 992px) {
       .about-section .services .tab-content .tab-pane .left-part .page-title {
         margin-bottom: 10px;
-        letter-spacing: 3.5px; }
+        letter-spacing: 3.5px; } }
+      @media (max-width: 992px) and (max-width: 640px) {
+        .about-section .services .tab-content .tab-pane .left-part .page-title {
+          font-size: 16px;
+          color: #000 !important;
+          margin-bottom: 5px; } }
+
+@media (max-width: 992px) {
       .about-section .services .tab-content .tab-pane .left-part p {
         font-size: 15px;
         letter-spacing: 2.5px;
         line-height: 1.9;
-        margin-bottom: 30px; }
+        margin-bottom: 30px; } }
+      @media (max-width: 992px) and (max-width: 640px) {
+        .about-section .services .tab-content .tab-pane .left-part p {
+          font-size: 12px;
+          letter-spacing: 1px;
+          line-height: 1.4;
+          margin-bottom: 30px; } }
+
+@media (max-width: 992px) {
     .about-section .services .tab-content .tab-pane .right-part {
       padding: 0;
       display: -ms-flexbox;
@@ -991,20 +1316,47 @@ a {
       -ms-flex-pack: justify;
           justify-content: space-between; }
       .about-section .services .tab-content .tab-pane .right-part div {
-        width: 49%; }
+        width: 49%; } }
+      @media (max-width: 992px) and (max-width: 640px) {
+        .about-section .services .tab-content .tab-pane .right-part div {
+          width: 42%; } }
+
+@media (max-width: 992px) {
         .about-section .services .tab-content .tab-pane .right-part div span {
           font-size: 26px;
           color: #000 !important;
-          margin-bottom: 10px; }
+          margin-bottom: 10px; } }
+        @media (max-width: 992px) and (max-width: 640px) {
+          .about-section .services .tab-content .tab-pane .right-part div span {
+            font-size: 16px;
+            color: #000 !important;
+            margin-bottom: 5px; } }
+
+@media (max-width: 992px) {
         .about-section .services .tab-content .tab-pane .right-part div p {
           font-size: 14px;
           letter-spacing: 2px;
           line-height: 2;
-          margin-bottom: 0; }
+          margin-bottom: 0; } }
+        @media (max-width: 992px) and (max-width: 640px) {
+          .about-section .services .tab-content .tab-pane .right-part div p {
+            font-size: 12px;
+            line-height: 1.2;
+            letter-spacing: 0; } }
+
+@media (max-width: 992px) {
         .about-section .services .tab-content .tab-pane .right-part div:last-child {
-          margin-top: 130px; }
+          margin-top: 130px; } }
+        @media (max-width: 992px) and (max-width: 640px) {
+          .about-section .services .tab-content .tab-pane .right-part div:last-child {
+            margin-top: 0; } }
+
+@media (max-width: 992px) {
           .about-section .services .tab-content .tab-pane .right-part div:last-child span {
             margin-bottom: 20px; } }
+          @media (max-width: 992px) and (max-width: 640px) {
+            .about-section .services .tab-content .tab-pane .right-part div:last-child span {
+              margin-bottom: 5px; } }
 
 .about-section p {
   font-size: 20px;
@@ -1103,6 +1455,16 @@ a {
     margin-left: -40px;
     margin-right: 40px; } }
 
+@media (max-width: 640px) {
+  #team .project-text {
+    font-size: 14px;
+    letter-spacing: 0px;
+    line-height: 1.4;
+    margin-bottom: 15px; }
+  #team .team-holder {
+    margin-left: 0px;
+    margin-right: 0px; } }
+
 @media (max-width: 1600px) {
   #projects .page-title {
     margin-bottom: 50px;
@@ -1120,6 +1482,12 @@ a {
       margin-right: 0;
       text-align: right; } }
 
+@media (max-width: 640px) {
+  #projects .page-title {
+    margin-bottom: 15px;
+    text-align: center !important;
+    margin-right: 0; } }
+
 @media (max-width: 992px) {
   #projects .projects-description {
     -ms-flex-direction: column-reverse;
@@ -1129,6 +1497,11 @@ a {
       width: 100%;
       padding: 0;
       margin: 0; } }
+    @media (max-width: 992px) and (max-width: 640px) {
+      #projects .projects-description p {
+        font-size: 12px;
+        line-height: 1.4;
+        letter-spacing: 0; } }
 
 @media (max-width: 1600px) {
   #job .page-title {
@@ -1148,11 +1521,25 @@ a {
       display: block;
       margin-left: 220px; } }
 
+@media (max-width: 640px) {
+  #job .page-title {
+    margin: 0 auto 15px;
+    text-align: center !important; }
+    #job .page-title i {
+      display: block;
+      margin: 0 auto; } }
+
 #job .project-text {
   max-width: 490px;
   width: 100%;
   margin-bottom: 40px !important;
   padding: 0; }
+  @media (max-width: 640px) {
+    #job .project-text {
+      margin-bottom: 15px !important;
+      font-size: 14px;
+      line-height: 1.4;
+      letter-spacing: 0; } }
 
 @media (max-width: 1600px) {
   #contact .page-title {
@@ -1162,6 +1549,11 @@ a {
 @media (max-width: 992px) {
   #contact .page-title {
     margin: 0 auto 70px;
+    text-align: left !important; } }
+
+@media (max-width: 640px) {
+  #contact .page-title {
+    margin: 0 auto 15px;
     text-align: left !important; } }
 
 .team-holder {
@@ -1200,6 +1592,10 @@ a {
       letter-spacing: 2px;
       color: #313b0f;
       margin-bottom: 5px; }
+      @media (max-width: 640px) {
+        .team-holder .swiper-slide i {
+          font-size: 12px;
+          letter-spacing: 1px; } }
     .team-holder .swiper-slide span {
       font-size: 17px;
       color: #313b0f;
@@ -1207,6 +1603,9 @@ a {
       @media (max-width: 1600px) {
         .team-holder .swiper-slide span {
           font-size: 15px; } }
+      @media (max-width: 640px) {
+        .team-holder .swiper-slide span {
+          font-size: 14px; } }
 
 .clients {
   max-width: 865px;
@@ -1222,6 +1621,10 @@ a {
       width: 100%;
       margin-left: -5px;
       margin-top: 20px; } }
+  @media (max-width: 640px) {
+    .clients {
+      margin-left: 0px;
+      margin-top: 15px; } }
   .clients a {
     display: -ms-flexbox;
     display: flex;
@@ -1242,10 +1645,20 @@ a {
         margin: 0 5px 5px;
         height: 122px;
         min-height: 122px; } }
+    @media (max-width: 640px) {
+      .clients a {
+        max-width: 45%;
+        margin: 0 auto 10px;
+        height: 80px;
+        min-height: 80px; } }
 
 @media (max-width: 1600px) {
   .jobs-list {
     margin-right: 65px; } }
+
+@media (max-width: 640px) {
+  .jobs-list {
+    margin-right: 0px; } }
 
 .jobs-list ul {
   width: 50%;
@@ -1271,6 +1684,10 @@ a {
         letter-spacing: 1px;
         font-size: 26px;
         color: #000; } }
+    @media (max-width: 640px) {
+      .jobs-list ul .orange {
+        font-size: 18px;
+        margin-bottom: 10px; } }
   .jobs-list ul li {
     margin-bottom: 25px; }
     @media (max-width: 992px) {
@@ -1288,6 +1705,10 @@ a {
         .jobs-list ul li a {
           letter-spacing: 2px;
           font-size: 26px; } }
+      @media (max-width: 640px) {
+        .jobs-list ul li a {
+          letter-spacing: 1px;
+          font-size: 14px; } }
 
 .jobs-list .medium-link {
   max-width: 290px;
@@ -1303,6 +1724,13 @@ a {
       max-width: 251px;
       height: 56px;
       margin: 0 auto 0 0; } }
+  @media (max-width: 640px) {
+    .jobs-list .medium-link {
+      max-width: 190px;
+      height: 40px;
+      font-size: 16px;
+      letter-spacing: 2px;
+      margin: 0 auto; } }
 
 @media (max-width: 1600px) {
   .contact-list {
@@ -1312,6 +1740,10 @@ a {
   .contact-list {
     margin-left: 0px;
     margin-bottom: 25px; } }
+
+@media (max-width: 640px) {
+  .contact-list {
+    margin-bottom: 15px; } }
 
 .contact-list li {
   font-size: 28px;
@@ -1324,6 +1756,9 @@ a {
       letter-spacing: 4px;
       line-height: 1.8;
       margin-bottom: 5px; } }
+  @media (max-width: 640px) {
+    .contact-list li {
+      font-size: 12px; } }
   .contact-list li a {
     color: #313b0f; }
   .contact-list li b {
@@ -1333,6 +1768,9 @@ a {
     @media (max-width: 1600px) {
       .contact-list li b {
         font-size: 22px; } }
+    @media (max-width: 640px) {
+      .contact-list li b {
+        font-size: 14px; } }
 
 .map-holder {
   max-width: 805px;
@@ -1348,6 +1786,11 @@ a {
       width: 100vw;
       height: 325px;
       margin-left: -100px; } }
+  @media (max-width: 640px) {
+    .map-holder {
+      width: 100vw;
+      height: 200px;
+      margin-left: -20px; } }
 
 /*slider styles*/
 .slider-holder {
@@ -1367,6 +1810,11 @@ a {
         max-width: 365px;
         height: 520px;
         margin-left: 95px; } }
+    @media (max-width: 640px) {
+      .slider-holder .swiper-container {
+        max-width: 230px;
+        height: 325px;
+        margin-left: 55px; } }
   .slider-holder .swiper-button-prev,
   .slider-holder .swiper-button-next {
     position: absolute;
@@ -1391,6 +1839,13 @@ a {
         top: 61.5%;
         width: 40px;
         height: 40px; } }
+    @media (max-width: 640px) {
+      .slider-holder .swiper-button-prev,
+      .slider-holder .swiper-button-next {
+        left: 5px;
+        top: 52.5%;
+        width: 30px;
+        height: 30px; } }
   .slider-holder .swiper-button-next {
     top: 35%;
     transform: rotate(90deg); }
@@ -1400,6 +1855,9 @@ a {
     @media (max-width: 992px) {
       .slider-holder .swiper-button-next {
         top: 45.5%; } }
+    @media (max-width: 640px) {
+      .slider-holder .swiper-button-next {
+        top: 36.5%; } }
   .slider-holder .swiper-pagination-fraction {
     bottom: auto;
     left: 0;
@@ -1413,6 +1871,10 @@ a {
       .slider-holder .swiper-pagination-fraction {
         left: 5px;
         top: 51.5%; } }
+    @media (max-width: 640px) {
+      .slider-holder .swiper-pagination-fraction {
+        left: 0px;
+        top: 40.5%; } }
     .slider-holder .swiper-pagination-fraction span {
       font-size: 18px; }
       @media (max-width: 1600px) {
@@ -1421,6 +1883,9 @@ a {
       @media (max-width: 992px) {
         .slider-holder .swiper-pagination-fraction span {
           font-size: 19px; } }
+      @media (max-width: 640px) {
+        .slider-holder .swiper-pagination-fraction span {
+          font-size: 14px; } }
   .slider-holder .downnload {
     float: right;
     margin: 40px 145px 20px auto;
@@ -1436,6 +1901,10 @@ a {
         margin: 15px 95px;
         float: left;
         font-size: 28px; } }
+    @media (max-width: 640px) {
+      .slider-holder .downnload {
+        margin: 15px 55px;
+        font-size: 20px; } }
 
 #doc .page-title {
   margin-bottom: 120px; }
@@ -1459,33 +1928,11 @@ a {
     display: block;
     margin-bottom: 65px; } }
 
-#choose-plan .modal-dialog {
-  max-width: 1200px;
-  width: 100%;
-  height: 100%; }
-  #choose-plan .modal-dialog .modal-content {
-    min-height: 700px;
-    background: url(../images/modal-bg.png) no-repeat;
-    background-size: 100% 100%; }
-    #choose-plan .modal-dialog .modal-content .page-title {
-      max-width: 970px;
-      width: 100%;
-      margin: 0 auto 70px; }
-    #choose-plan .modal-dialog .modal-content .modal-header {
-      border: 0; }
-      #choose-plan .modal-dialog .modal-content .modal-header img {
-        margin-right: 150px;
-        margin-top: 40px; }
-    #choose-plan .modal-dialog .modal-content .modal-body .choose-plan {
-      max-width: 425px; }
-      #choose-plan .modal-dialog .modal-content .modal-body .choose-plan h2 {
-        font-size: 40px;
-        margin-bottom: 40px; }
-      #choose-plan .modal-dialog .modal-content .modal-body .choose-plan p {
-        font-size: 19px;
-        line-height: 30px;
-        color: #000;
-        font-family: Roboto;
-        font-weight: 300;
-        margin-bottom: 80px;
-        text-align: left; }
+@media (max-height: 570px) {
+  .padding-section {
+    min-height: 100%;
+    height: 100% !important; }
+    .padding-section .fp-tableCell {
+      height: 100% !important; }
+  .about-section {
+    padding-bottom: 70px; } }

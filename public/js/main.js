@@ -15,9 +15,8 @@
 $(document).ready(initPage);
 
 function initPage() {
-    // $('.nav-tabs > li:first-child > a')[0].click();
     $('#fullpage').fullpage({
-        // responsiveWidth: '992',
+        responsiveHeight: '570',
         licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
         fixedElements: '#header,#footer-socials,#footer-callback, #fixed-bg',
         anchors: ['main', 'price', 'services', 'about'],
@@ -26,6 +25,18 @@ function initPage() {
             $('nav').tab("show");
         }
     });
+    $('.menu-mobile').click(function () {
+    	$('.fader').show();
+    	$('#myMenu').addClass('show-menu');
+    });
+    $('.fader').click(function () {
+    	$('.fader').hide();
+    	$('#myMenu').removeClass('show-menu');
+    });
+    $('#myMenu a').click(function() {
+    	$('#myMenu').removeClass('show-menu');
+    	$('.fader').hide();
+    })
 
     $('.tabbable .main-description .link').click(function() {
         $(this).parents().find('.main-description').hide();
@@ -76,7 +87,7 @@ function initPage() {
             });
             var swiper = new Swiper('.team-holder.swiper-container', {
                 slidesPerView: 4,
-                loop: true,
+                loop: false,
                 spaceBetween: 20
             });
         }

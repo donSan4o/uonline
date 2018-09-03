@@ -18,6 +18,14 @@ h1{
 		letter-spacing: 2.5px;
 		margin-bottom: 70px;
 	}
+	@media (max-width: 750px) {
+		margin-bottom: 35px;
+	}
+	@media (max-width: 640px) {
+		font-size: 14px;
+		margin-bottom: 15px;
+		letter-spacing: 1px;
+	}
 }
 h2{
 	font-size: $h2-font-size;
