@@ -30,8 +30,10 @@
             <li data-menuanchor="price"><a href="#price">Тарифы</a></li>
             <li data-menuanchor="services"><a href="#services">Услуги</a></li>
             <li data-menuanchor="about"><a href="#about">О нас</a></li>
-            <li><a href="#">Личный Кабинет</a></li>
-        </ul>        
+            <li data-menuanchor="contacts"><a href="#contacts">Контакты</a></li>
+            <li data-menuanchor="documents"><a href="#documents">Документы</a></li>
+            <!-- <li><a href="#">Личный Кабинет</a></li> -->
+        </ul>
     </div>
     <div id="footer-socials" class="d-flex align-items-center">
         <a href="#">
@@ -59,7 +61,6 @@
                         </p>
                         <div class="d-flex align-items-center justify-content-end links-holder"> 
                             <a href="#" data-toggle="modal" data-target="#modal-form" class="big-link d-flex align-items-center justify-content-center">Подключиться</a>
-                            <a href="#" class="link">Подробнее...</a>
                         </div>
                     </div>
                 </div>
@@ -161,7 +162,6 @@
                                         </p>
                                         <div class="d-flex align-items-center justify-content-end links-holder"> 
                                             <a href="#" class="big-link d-flex align-items-center justify-content-center">То что нужно!</a>
-                                            <a href="#" class="link">Подробнее...</a>
                                         </div>
                                     </div>
                                     <div class="detail-block main-description">
@@ -180,7 +180,6 @@
                                         </p>
                                         <div class="d-flex align-items-center justify-content-end links-holder"> 
                                             <a href="#" class="big-link d-flex align-items-center justify-content-center">То что нужно!</a>
-                                            <a href="#" class="link">Подробнее...</a>
                                         </div>
                                     </div>
                                 </div>
@@ -192,7 +191,6 @@
                                         </p>
                                         <div class="d-flex align-items-center justify-content-end links-holder"> 
                                             <a href="#" class="big-link d-flex align-items-center justify-content-center">То что нужно!</a>
-                                            <a href="#" class="link">Подробнее...</a>
                                         </div>
                                     </div>
                                 </div>
@@ -204,7 +202,6 @@
                                         </p>
                                         <div class="d-flex align-items-center justify-content-end links-holder"> 
                                             <a href="#" class="big-link d-flex align-items-center justify-content-center">То что нужно!</a>
-                                            <a href="#" class="link">Подробнее...</a>
                                         </div>
                                     </div>
                                 </div>
@@ -216,7 +213,6 @@
                                         </p>
                                         <div class="d-flex align-items-center justify-content-end links-holder"> 
                                             <a href="#" class="big-link d-flex align-items-center justify-content-center">То что нужно!</a>
-                                            <a href="#" class="link">Подробнее...</a>
                                         </div>
                                     </div>
                                 </div>
@@ -257,8 +253,6 @@
                     <li role="presentation"><a href="#team" aria-controls="team" role="tab" data-toggle="tab">Команда</a></li>
                     <li role="presentation"><a href="#projects" aria-controls=projects" role="tab" data-toggle="tab">Проекты</a></li>
                     <li role="presentation"><a href="#job" aria-controls="job" role="tab" data-toggle="tab">Карьера</a></li>
-                    <li role="presentation"><a href="#contact" aria-controls="contact" role="tab" data-toggle="tab">Контакты</a></li>
-                    <li role="presentation"><a href="#doc" aria-controls="doc" role="tab" data-toggle="tab">Документы</a></li>
                 </ul>
                 <div class="tab-content">
                     <div role="tabpanel" class="tab-pane active" id="history">
@@ -380,46 +374,49 @@
                             </div>
                         </div>
                     </div>
-                    <div role="tabpanel" class="tab-pane" id="contact">
-                        <span class="page-title d-block text-right two-rows text-center">Как нас найти</span>
-                        <div class="d-flex justify-content-between">
-                            <ul class="contact-list">
-                                <li><b>Адрес:</b> Санкт-Петербург, Авиагородок,<br> ул. Взлётная д. 7, лит. А, 3 2 этаж</li>
-                                <li><b>Телефон:</b><a href="tel:+78126704343"> +7 (812) 670-43-43</a></li>
-                                <li><b>Почта:</b><a href="mailto:info@yonl.ru"> info@yonl.ru</a></li>
-                                <li><b>Ежедневно:</b> 10:00-19:00</li>
-                            </ul>
-                            <div class="map-holder">
-                                <!-- insert map code here -->
-                            </div>
-                        </div>
+                </div>
+            </div>
+        </div>
+        <div class="section padding-section about-section">
+            <div role="tabpanel" class="tab-pane tab-content" id="contact">
+                <span class="page-title d-block text-right two-rows text-center">Как нас найти</span>
+                <div class="d-flex justify-content-between">
+                    <ul class="contact-list">
+                        <li><b>Адрес:</b> Санкт-Петербург, Авиагородок,<br> ул. Взлётная д. 7, лит. А, 3 2 этаж</li>
+                        <li><b>Телефон:</b><a href="tel:+78126704343"> +7 (812) 670-43-43</a></li>
+                        <li><b>Почта:</b><a href="mailto:info@yonl.ru"> info@yonl.ru</a></li>
+                        <li><b>Ежедневно:</b> 10:00-19:00</li>
+                    </ul>
+                    <div class="map-holder">
+                        <!-- insert map code here -->
                     </div>
-                    <div role="tabpanel" class="tab-pane" id="doc">
-                        
-                        <div class="d-flex justify-content-between">
-                            <div class="slider-holder">
-                                <span class="page-title d-block text-right two-rows mobile-only">Соблюдаем все стандарты</span>
-                                <div class="swiper-container">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide"><img src="images/slider-img.jpg" alt="slider-image"></div>
-                                        <div class="swiper-slide"><img src="images/slider-img.jpg" alt="slider-image"></div>
-                                        <div class="swiper-slide"><img src="images/slider-img.jpg" alt="slider-image"></div>
-                                        <div class="swiper-slide"><img src="images/slider-img.jpg" alt="slider-image"></div>
-                                        <div class="swiper-slide"><img src="images/slider-img.jpg" alt="slider-image"></div>
-                                    </div>
-                                </div>
-                                <a href="#" class="downnload">Скачать</a>
-                                <div class="swiper-button-prev"></div>
-                                <div class="swiper-button-next"></div>
-                                <div class="swiper-pagination"></div>
-                            </div>
-                            <div class="right-column">
-                                <span class="page-title d-block text-right two-rows">Соблюдаем все стандарты</span>
-                                <p class="project-text">
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,  with the release of Letraset sheets contnd more recently with desktop
-                                </p>       
+                </div>
+            </div>
+        </div>
+        <div class="section padding-section about-section">
+            <div role="tabpanel" class="tab-content" id="doc">
+                <div class="d-flex justify-content-between">
+                    <div class="slider-holder">
+                        <span class="page-title d-block text-right two-rows mobile-only">Соблюдаем все стандарты</span>
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="images/slider-img.jpg" alt="slider-image"></div>
+                                <div class="swiper-slide"><img src="images/slider-img.jpg" alt="slider-image"></div>
+                                <div class="swiper-slide"><img src="images/slider-img.jpg" alt="slider-image"></div>
+                                <div class="swiper-slide"><img src="images/slider-img.jpg" alt="slider-image"></div>
+                                <div class="swiper-slide"><img src="images/slider-img.jpg" alt="slider-image"></div>
                             </div>
                         </div>
+                        <a href="#" class="downnload">Скачать</a>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <div class="right-column">
+                        <span class="page-title d-block text-right two-rows">Соблюдаем все стандарты</span>
+                        <p class="project-text">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,  with the release of Letraset sheets contnd more recently with desktop
+                        </p>       
                     </div>
                 </div>
             </div>
@@ -493,7 +490,7 @@
     <div class="fader"></div>
     
     <noscript>Detected missing Javascript support. Certain website features will not operate correctly with Javascript disabled.</noscript>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.1/fullpage.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>

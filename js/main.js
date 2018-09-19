@@ -17,9 +17,10 @@ $(document).ready(initPage);
 function initPage() {
     $('#fullpage').fullpage({
         responsiveHeight: '570',
+        responsiveWidth: '640',
         licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
         fixedElements: '#header,#footer-socials,#footer-callback, #fixed-bg',
-        anchors: ['main', 'price', 'services', 'about'],
+        anchors: ['main', 'price', 'services', 'about','contacts','documents'],
         menu: '#myMenu',
         afterLoad: function() {
             $('nav').tab("show");
@@ -47,6 +48,18 @@ function initPage() {
         	$('.detail-block .page-title').addClass('hide');
         }
     });
+    var swiper = new Swiper('#doc .swiper-container', {
+        direction: 'vertical',
+        loop: true,
+        navigation: {
+            nextEl: '.swiper-button-prev',
+            prevEl: '.swiper-button-next',
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'fraction',
+        },
+    });
     $('.back-link').click(function() {
         $(this).parents().find('.main-description').show();
         $('.tabbable').find('.nav-tabs').removeClass('d-flex').show();
@@ -55,18 +68,6 @@ function initPage() {
         $('.detail-block .page-title').removeClass('hide');
     });
     $('body').on('shown.bs.tab', function(event) {
-        var swiper = new Swiper('#doc .swiper-container', {
-            direction: 'vertical',
-            loop: true,
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            pagination: {
-                el: '.swiper-pagination',
-                type: 'fraction',
-            },
-        });
         if ($(window).width() < 992) {
             $('.telephone, .servers, .team-holder').addClass('swiper-container');
             var swiper = new Swiper('.telephone.swiper-container', {
