@@ -20,7 +20,7 @@ function initPage() {
         responsiveWidth: '640',
         licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
         fixedElements: '#header,#footer-socials,#footer-callback, #fixed-bg',
-        anchors: ['main', 'price', 'services', 'about','contacts','documents'],
+        anchors: ['main', 'price', 'services', 'documents', 'about','contacts'],
         menu: '#myMenu',
         afterLoad: function() {
             $('nav').tab("show");
