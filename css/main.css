@@ -274,12 +274,13 @@ a {
   #header .phone {
     font-size: 17px;
     line-height: 1.2;
+    font-family: FuturaBook;
     color: #313b0f;
-    font-family: 'FuturaBook';
-    color: #313b0f;
-    letter-spacing: 2.7px;
-    margin-left: 85px;
-    margin-top: -5px; }
+    letter-spacing: 0px;
+    margin: 0 75px 0 60px;
+    margin-top: 0px;
+    -ms-flex-negative: 0;
+        flex-shrink: 0; }
     @media (max-width: 1800px) {
       #header .phone {
         margin-left: 0;
@@ -296,7 +297,9 @@ a {
       background-size: contain;
       margin-right: 10px; }
   #header #myMenu {
-    height: 100%; }
+    height: 100%;
+    -ms-flex-negative: 0;
+        flex-shrink: 0; }
     @media (max-width: 992px) {
       #header #myMenu {
         position: fixed;
@@ -319,7 +322,7 @@ a {
         width: 280px;
         left: -280px; } }
     #header #myMenu li {
-      margin-left: 2.6vw; }
+      margin-left: 3.9vw; }
       @media (max-width: 1600px) {
         #header #myMenu li {
           margin-left: 4.3vw; } }
@@ -339,11 +342,10 @@ a {
         right: 0;
         margin: 0 auto; }
       #header #myMenu li a {
-        font-size: 1.5vw;
+        font-size: 1.4vw;
         font-family: 'FuturaBookC';
         color: #313b0f;
-        position: relative;
-        letter-spacing: 5px; }
+        position: relative; }
         @media (max-width: 1600px) {
           #header #myMenu li a {
             letter-spacing: 1px; } }
@@ -551,8 +553,8 @@ a {
   z-index: 9;
   text-align: center;
   color: #f2f2f2;
-  left: 145px;
-  bottom: 7.3vw; }
+  left: 160px;
+  bottom: 2.1vw; }
   @media (max-width: 1900px) {
     #footer-socials {
       bottom: 40px;
@@ -610,12 +612,12 @@ a {
 #footer-callback {
   position: fixed;
   display: block;
-  width: 82px;
-  height: 82px;
-  right: 160px;
+  width: 58px;
+  height: 58px;
+  right: 150px;
   z-index: 9;
   color: #f2f2f2;
-  bottom: 7.3vw; }
+  bottom: 2vw; }
   @media (max-width: 1900px) {
     #footer-callback {
       bottom: 43px;
@@ -687,7 +689,7 @@ a {
   line-height: 1.1;
   color: #313b0f;
   font-family: FuturaBook;
-  margin-bottom: 35px;
+  margin-bottom: 40px;
   letter-spacing: 7px; }
   @media (max-width: 1600px) {
     .page-title {
@@ -716,14 +718,14 @@ a {
       margin-bottom: 30px; } }
   .page-title i {
     font-style: normal;
-    display: block;
-    margin-left: 105px; }
+    display: block; }
     @media (max-width: 750px) {
       .page-title i {
         margin-left: 0; } }
 
 .price-section .page-title {
-  padding-right: 8.9vw; }
+  margin-bottom: 50px;
+  letter-spacing: -1px; }
   @media (max-width: 1600px) {
     .price-section .page-title {
       margin-bottom: 75px; } }
@@ -740,14 +742,6 @@ a {
     .price-section .page-title {
       font-size: 22px;
       margin-bottom: 15px; } }
-  .price-section .page-title.two-rows {
-    padding-right: 13vw;
-    letter-spacing: 7.2px; }
-    @media (max-width: 1600px) {
-      .price-section .page-title.two-rows {
-        letter-spacing: 0; } }
-    .price-section .page-title.two-rows i {
-      margin-right: -4.9vw; }
 
 .big-link {
   background-color: #f0ab1b;
@@ -807,7 +801,7 @@ a {
       padding: 120px 0 0; } }
   .main-description img {
     max-width: 30.3vw;
-    margin-right: 75px;
+    margin-right: 230px;
     width: 100%;
     -ms-flex-negative: 0;
         flex-shrink: 0; }
@@ -819,13 +813,12 @@ a {
       .main-description img {
         display: none; } }
   .main-description p {
-    max-width: 45vw;
     font-size: 20px;
-    line-height: 2;
+    line-height: 40px;
     margin: 0 auto 55px;
     font-family: Roboto;
     font-weight: 400;
-    letter-spacing: 2px; }
+    letter-spacing: 3px; }
     @media (max-width: 1900px) {
       .main-description p {
         max-width: 45vw;
@@ -853,18 +846,7 @@ a {
         max-width: 100%;
         font-size: 15px; } }
   .main-description .links-holder {
-    max-width: 28vw;
-    margin: 0 auto; }
-    @media (max-width: 1900px) {
-      .main-description .links-holder {
-        max-width: 40vw; } }
-    @media (max-width: 992px) {
-      .main-description .links-holder {
-        max-width: 480px;
-        width: 100%;
-        margin: 0;
-        -ms-flex-pack: justify !important;
-            justify-content: space-between !important; } }
+    width: 100%; }
     .main-description .links-holder .big-link {
       color: #fff; }
       @media (max-width: 1600px) {
@@ -1014,7 +996,7 @@ a {
     .tab-content .tab-pane .plans .swiper-slide {
       background-color: rgba(49, 59, 15, 0.6);
       max-width: 27%;
-      height: 20vw;
+      height: 25vw;
       width: 100%;
       position: relative; }
       @media (max-width: 1600px) {
@@ -1129,7 +1111,7 @@ a {
     margin: 0 auto 0 0; } }
 
 .tabbable .nav-tabs {
-  padding: 115px 0 0;
+  padding: 15px 0 0;
   margin: 0; }
   @media (max-width: 1600px) {
     .tabbable .nav-tabs {
@@ -1169,9 +1151,11 @@ a {
 
 .tabbable .main-description {
   padding-top: 0; }
+  .tabbable .main-description .page-title {
+    line-height: 1.2; }
   .tabbable .main-description p {
-    max-width: 43vw;
-    margin: 0 auto 30px; }
+    max-width: 41vw;
+    margin: 0 auto 20px; }
     @media (max-width: 1600px) {
       .tabbable .main-description p {
         font-size: 16px;
