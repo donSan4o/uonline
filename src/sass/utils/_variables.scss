@@ -4,18 +4,19 @@ $black: #000;
 $white: #fff;
 $blue: #00f;
 $darkgreen: #313b0f;
-$orange: #f0ab1b;
+$orange: rgb(254, 197, 23);
+$lightgreen: #beeb38;
 
 // Body
-$base-font-size: 19px !default;
+$base-font-size: 22px !default;
 $base-line-height: 1.2 !default;
-$base-text-color: $black !default;
-$base-font-family: 'FuturaBookC', Arial, Helvetica, sans-serif !default;
+$base-text-color: $white !default;
+$base-font-family: 'Open Sans', Arial, Helvetica, sans-serif !default;
 $base-background-color: $white !default;
 $base-min-width: 320px;
 
 // Headings
-$h1-font-size: 1.5vw !default;
+$h1-font-size: 1.4vw !default;
 $h2-font-size: 27px !default;
 $h3-font-size: 24px !default;
 $h4-font-size: 21px !default;

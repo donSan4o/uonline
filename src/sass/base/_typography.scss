@@ -8,8 +8,8 @@ h1, h2, h3, h4, h5, h6{
 h1{
 	font-size: $h1-font-size;
 	color: $white;
-	margin-bottom: 50px;
-	letter-spacing: 5px;
+	margin-bottom: 145px;
+	letter-spacing: 0.6px;
 	@media (max-width: 1600px) {
 		letter-spacing: 2.5px;
 	}
@@ -29,7 +29,7 @@ h1{
 }
 h2{
 	font-size: $h2-font-size;
-	color: #008dd2;
+	color: $lightgreen;
 }
 h3{
 	font-size: $h3-font-size;
