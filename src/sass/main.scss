@@ -232,6 +232,52 @@
 		padding: 40px 0 0;
 	}
 }
+.service-holder {
+	max-width: 1622px;
+	width: 100%;
+	margin: 0 auto;
+	flex-wrap: wrap;
+	a {
+		border-radius: 2px;
+		background: linear-gradient( 0deg, rgb(20,78,108) 0%, rgb(7,39,56) 100%);
+		width: 33%;
+		height: 333px;
+		margin-bottom: 10px;
+		padding: 25px 20px;
+		position: relative;
+		
+		h2 {
+			font-size: 36px;
+			margin-bottom: 20px;
+		}
+		p {
+			font-size: 20px;
+			color: $white;
+		}
+		img {
+			opacity: 0.4;
+			fill: 45%;
+			position: absolute;
+			top: 50px;
+			right: 40px;
+			&.service-internet {
+				top: 40px;
+				right: 30px;
+			}
+			&.service-video	{
+				top: 70px;
+				right: -20px;
+			}
+		}
+		&:hover {
+			box-shadow: 0px 0px 20.16px 3.84px rgba(24, 24, 24, 0.004);	
+			img {
+				opacity: 1;
+				fill: 100%;
+			}
+		}
+	}
+}
 .nav-tabs {
 	border: 0;
 	max-width: 1620px;

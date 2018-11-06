@@ -885,6 +885,44 @@ a {
     .padding-section {
       padding: 40px 0 0; } }
 
+.service-holder {
+  max-width: 1622px;
+  width: 100%;
+  margin: 0 auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .service-holder a {
+    border-radius: 2px;
+    background: linear-gradient(0deg, #144e6c 0%, #072738 100%);
+    width: 33%;
+    height: 333px;
+    margin-bottom: 10px;
+    padding: 25px 20px;
+    position: relative; }
+    .service-holder a h2 {
+      font-size: 36px;
+      margin-bottom: 20px; }
+    .service-holder a p {
+      font-size: 20px;
+      color: #fff; }
+    .service-holder a img {
+      opacity: 0.4;
+      fill: 45%;
+      position: absolute;
+      top: 50px;
+      right: 40px; }
+      .service-holder a img.service-internet {
+        top: 40px;
+        right: 30px; }
+      .service-holder a img.service-video {
+        top: 70px;
+        right: -20px; }
+    .service-holder a:hover {
+      box-shadow: 0px 0px 20.16px 3.84px rgba(24, 24, 24, 0.004); }
+      .service-holder a:hover img {
+        opacity: 1;
+        fill: 100%; }
+
 .nav-tabs {
   border: 0;
   max-width: 1620px;
