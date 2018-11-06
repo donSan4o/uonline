@@ -1,18 +1,17 @@
 {
-  "name": "Gulp-Starter",
+  "name": "Uonline",
   "version": "0.0.1",
   "description": "",
   "main": "gulpfile.js",
-  "author": "donSan4o",
+  "author": "Alex Pogrebnjak",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git://github.com/donSan4o/uonline.git"
+    "url": "git@github.com:donSan4o/uonline.git"
   },
   "devDependencies": {
     "browser-sync": "^2.7.5",
     "del": "^1.2.0",
-    "gulp": "^3.9.1",
     "gulp-autoprefixer": "^2.3.0",
     "gulp-cache": "^0.2.9",
     "gulp-changed": "^1.2.1",
@@ -30,8 +29,6 @@
     "gulp-uglify": "^1.2.0"
   },
   "dependencies": {
-    "gulp-serviceworker": "0.0.3",
-    "sw-precache": "^5.2.1",
-    "sw-toolbox": "^3.6.0"
+    "gulp": "^3.9.1"
   }
 }

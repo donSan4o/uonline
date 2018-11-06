@@ -16,19 +16,8 @@ var gulp = require('gulp'),
     changed = require('gulp-changed'),
     imagemin = require('gulp-imagemin'),
     size = require('gulp-size'),
-    ghPages = require('gulp-gh-pages'),
-    gulpServiceWorker = require('gulp-serviceworker');
+    ghPages = require('gulp-gh-pages');
 
-
-gulp.task('generate-service-worker', function(callback) {
-  var swPrecache = require('sw-precache');
-  var rootDir = 'public';
-
-  swPrecache.write(`${rootDir}/service-worker.js`, {
-    staticFileGlobs: [rootDir + '/**/*.{js,html,css,png,jpg,gif,svg,eot,ttf,woff}'],
-    stripPrefix: rootDir
-  }, callback);
-});
 
 gulp.task('styles', function() {
   gulp.src('./src/sass/**/*.scss')
