@@ -55,10 +55,14 @@ function initPage() {
             nextEl: '.swiper-button-prev',
             prevEl: '.swiper-button-next',
         },
+
         pagination: {
             el: '.swiper-pagination',
-            type: 'fraction',
+            clickable: true,
+            renderBullet: function (index, className) {
+            return '<span class="' + className + '">Название документа_'+ (index + 1) + '</span>';
         },
+      },
     });
     $('.back-link').click(function() {
         $(this).parents().find('.main-description').show();
