@@ -134,7 +134,7 @@ h1 {
   color: #fff;
   margin-bottom: 145px;
   letter-spacing: 0.6px; }
-  @media (max-width: 1600px) {
+  @media (max-width: 1800px) {
     h1 {
       letter-spacing: 1px;
       font-size: 24px;
@@ -207,7 +207,7 @@ a {
         width: 33px;
         height: 18px;
         margin-left: 20px; } }
-  @media (max-width: 1600px) {
+  @media (max-width: 1800px) {
     #header {
       height: 60px; } }
   @media (max-width: 992px) {
@@ -243,7 +243,7 @@ a {
     -ms-flex-negative: 0;
         flex-shrink: 0;
     padding-top: 10px; }
-    @media (max-width: 1600px) {
+    @media (max-width: 1800px) {
       #header .logo-links .logo {
         margin-right: 55px;
         max-width: 145px; } }
@@ -267,7 +267,7 @@ a {
     max-width: 360px;
     width: 100%;
     padding-top: 10px; }
-    @media (max-width: 1600px) {
+    @media (max-width: 1800px) {
       #header .logo-links .links {
         padding: 0; } }
     @media (max-width: 992px) {
@@ -285,7 +285,7 @@ a {
       display: -ms-flexbox;
       display: flex;
       border: 3px solid transparent; }
-      @media (max-width: 1600px) {
+      @media (max-width: 1800px) {
         #header .logo-links .links a {
           font-size: 15px;
           height: 30px;
@@ -331,7 +331,7 @@ a {
       background: url(../images/phone.svg) no-repeat;
       background-size: contain;
       margin-right: 10px; }
-      @media (max-width: 1600px) {
+      @media (max-width: 1800px) {
         #header .phone:before {
           width: 20px;
           height: 20px;
@@ -340,7 +340,7 @@ a {
     height: 100%;
     -ms-flex-negative: 0;
         flex-shrink: 0; }
-    @media (min-width: 993px) and (max-width: 1600px) {
+    @media (min-width: 993px) and (max-width: 1800px) {
       #header #myMenu {
         margin-top: -10px; } }
     @media (max-width: 992px) {
@@ -366,7 +366,7 @@ a {
         left: -280px; } }
     #header #myMenu li {
       margin-left: 3vw; }
-      @media (max-width: 1600px) {
+      @media (max-width: 1800px) {
         #header #myMenu li {
           margin-left: 50px; } }
       @media (max-width: 992px) {
@@ -384,7 +384,7 @@ a {
         left: 0;
         right: 0;
         margin: 0 auto; }
-        @media (max-width: 1600px) {
+        @media (max-width: 1800px) {
           #header #myMenu li.active a:before {
             height: 5px;
             top: -17px; } }
@@ -394,7 +394,7 @@ a {
         font-size: 1.4vw;
         color: #fff;
         position: relative; }
-        @media (max-width: 1600px) {
+        @media (max-width: 1800px) {
           #header #myMenu li a {
             letter-spacing: 0px;
             font-size: 16px; } }
@@ -411,7 +411,7 @@ a {
           left: 0;
           right: 0;
           margin: 0 auto; }
-          @media (max-width: 1600px) {
+          @media (max-width: 1800px) {
             #header #myMenu li a:hover:after {
               height: 5px;
               top: -17px; } }
@@ -697,7 +697,7 @@ a {
   width: 40px;
   height: 45px;
   z-index: 9; }
-  @media (max-width: 1600px) {
+  @media (max-width: 1800px) {
     .mouse {
       bottom: 25px;
       width: 27px;
@@ -768,7 +768,7 @@ a {
   color: #beeb38;
   margin-bottom: 10px;
   font-weight: bold; }
-  @media (max-width: 1600px) {
+  @media (max-width: 1800px) {
     .page-title {
       letter-spacing: 0px;
       margin-bottom: 10px;
@@ -803,7 +803,7 @@ a {
 .price-section .page-title {
   margin-bottom: 50px;
   letter-spacing: -1px; }
-  @media (max-width: 1600px) {
+  @media (max-width: 1800px) {
     .price-section .page-title {
       margin-bottom: 75px; } }
   @media (max-width: 992px) {
@@ -830,7 +830,7 @@ a {
   .big-link:hover {
     color: #fff;
     background: #fec517; }
-  @media (max-width: 1600px) {
+  @media (max-width: 1800px) {
     .big-link {
       width: 175px;
       height: 45px;
@@ -848,18 +848,18 @@ a {
   line-height: 1.2;
   color: #fefefe;
   letter-spacing: 5px; }
-  @media (max-width: 1600px) {
+  @media (max-width: 1800px) {
     .medium-link {
       letter-spacing: 2px; } }
   .medium-link:hover {
     color: #fff; }
 
 .main-description {
-  max-width: 1600px;
+  max-width: 1800px;
   width: 100%;
   margin: 0 auto;
   padding-top: 8.7vw; }
-  @media (max-width: 1600px) {
+  @media (max-width: 1800px) {
     .main-description {
       padding-top: 115px;
       padding-left: 115px; } }
@@ -912,7 +912,7 @@ a {
 
 .padding-section {
   padding-top: 170px; }
-  @media (max-width: 1600px) {
+  @media (max-width: 1400px) {
     .padding-section {
       padding-top: 120px; } }
   @media (max-width: 992px) {
@@ -931,7 +931,7 @@ a {
   margin: 0 auto;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
-  @media (max-width: 1600px) {
+  @media (max-width: 1800px) {
     .service-holder {
       max-width: 1140px; } }
   .service-holder a {
@@ -942,7 +942,7 @@ a {
     margin-bottom: 10px;
     padding: 25px 20px;
     position: relative; }
-    @media (max-width: 1600px) {
+    @media (max-width: 1800px) {
       .service-holder a {
         height: 222px;
         margin-bottom: 5px;
@@ -950,14 +950,14 @@ a {
     .service-holder a h2 {
       font-size: 36px;
       margin-bottom: 20px; }
-      @media (max-width: 1600px) {
+      @media (max-width: 1800px) {
         .service-holder a h2 {
           font-size: 26px;
           margin-bottom: 7px; } }
     .service-holder a p {
       font-size: 20px;
       color: #fff; }
-      @media (max-width: 1600px) {
+      @media (max-width: 1800px) {
         .service-holder a p {
           font-size: 16px; } }
     .service-holder a img {
@@ -969,12 +969,12 @@ a {
       .service-holder a img.service-internet {
         top: 40px;
         right: 30px; }
-        @media (max-width: 1600px) {
+        @media (max-width: 1800px) {
           .service-holder a img.service-internet {
             top: 20px;
             right: 10px;
             width: 150px; } }
-      @media (max-width: 1600px) {
+      @media (max-width: 1800px) {
         .service-holder a img.service-telephone {
           top: 25px;
           right: 25px;
@@ -982,22 +982,22 @@ a {
       .service-holder a img.service-video {
         top: 70px;
         right: -20px; }
-        @media (max-width: 1600px) {
+        @media (max-width: 1800px) {
           .service-holder a img.service-video {
             top: 35px;
             right: -17px;
             width: 205px; } }
-      @media (max-width: 1600px) {
+      @media (max-width: 1800px) {
         .service-holder a img.service-data-center {
           top: 50px;
           right: 40px;
           width: 160px; } }
-      @media (max-width: 1600px) {
+      @media (max-width: 1800px) {
         .service-holder a img.service-integration {
           top: 35px;
           right: 30px;
           width: 185px; } }
-      @media (max-width: 1600px) {
+      @media (max-width: 1800px) {
         .service-holder a img.service-channel {
           top: 30px;
           right: 30px;
@@ -1013,7 +1013,7 @@ a {
   max-width: 1620px;
   margin: 0 auto 4vw;
   padding: 0 10px; }
-  @media (max-width: 1600px) {
+  @media (max-width: 1800px) {
     .nav-tabs {
       margin: 0 0 3vw 0; } }
   @media (max-width: 992px) {
@@ -1031,7 +1031,7 @@ a {
     margin-right: 40px; }
     .nav-tabs li:last-child {
       margin-right: 0; }
-    @media (max-width: 1600px) {
+    @media (max-width: 1800px) {
       .nav-tabs li {
         margin-right: 30px; } }
     .nav-tabs li a {
@@ -1039,7 +1039,7 @@ a {
       color: #fff;
       position: relative;
       letter-spacing: 5px; }
-      @media (max-width: 1600px) {
+      @media (max-width: 1800px) {
         .nav-tabs li a {
           letter-spacing: 0;
           font-size: 20px; } }
@@ -1058,7 +1058,7 @@ a {
   width: 100%;
   padding: 10px 0 0;
   position: relative; }
-  @media (max-width: 1600px) {
+  @media (max-width: 1800px) {
     .tab-content {
       padding: 0; } }
   @media (max-width: 992px) {
@@ -1068,7 +1068,7 @@ a {
   .tab-content .tab-pane .plans {
     max-width: 1330px;
     margin: 0 5.8vw 0 auto; }
-    @media (max-width: 1600px) {
+    @media (max-width: 1800px) {
       .tab-content .tab-pane .plans {
         max-width: 960px;
         margin: 0 auto; } }
@@ -1085,7 +1085,7 @@ a {
       height: 25vw;
       width: 100%;
       position: relative; }
-      @media (max-width: 1600px) {
+      @media (max-width: 1800px) {
         .tab-content .tab-pane .plans .swiper-slide {
           max-width: 26%;
           height: 24.5vw; } }
@@ -1107,7 +1107,7 @@ a {
         left: 0;
         right: 0;
         margin: 0 auto; }
-        @media (max-width: 1600px) {
+        @media (max-width: 1800px) {
           .tab-content .tab-pane .plans .swiper-slide .medium-link {
             bottom: 25px;
             max-width: 205px;
@@ -1130,7 +1130,7 @@ a {
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column; }
-  @media (max-width: 1600px) {
+  @media (max-width: 1800px) {
     .hidden-backlink-holder {
       margin-right: 40px; } }
   .hidden-backlink-holder a {
@@ -1139,7 +1139,7 @@ a {
     margin-bottom: 150px;
     position: relative;
     letter-spacing: 5px; }
-    @media (max-width: 1600px) {
+    @media (max-width: 1800px) {
       .hidden-backlink-holder a {
         letter-spacing: 1px;
         margin-bottom: 60px; } }
@@ -1167,7 +1167,7 @@ a {
     font-family: Roboto;
     font-weight: 400;
     letter-spacing: 2px; }
-    @media (max-width: 1600px) {
+    @media (max-width: 1800px) {
       .hidden-backlink-holder p {
         font-size: 14px; } }
     @media (max-width: 992px) {
@@ -1183,7 +1183,7 @@ a {
       .hidden-backlink-holder p {
         margin-bottom: 25px; } }
 
-@media (max-width: 1600px) {
+@media (max-width: 1800px) {
   #serv-int .page-title {
     text-align: left !important; } }
 
@@ -1192,7 +1192,7 @@ a {
     text-align: center !important;
     margin: 15px 0; } }
 
-@media (max-width: 1600px) {
+@media (max-width: 1800px) {
   #serv-int .links-holder {
     margin: 0 auto 0 0; } }
 
@@ -1207,7 +1207,7 @@ a {
     top: 135px;
     z-index: 3;
     font-weight: 600; }
-    @media (max-width: 1600px) {
+    @media (max-width: 1800px) {
       .tabbable h2 {
         font-size: 36px;
         top: 100px; } }
@@ -1228,10 +1228,10 @@ a {
       min-height: 485px;
       background: #fff;
       position: absolute; }
-      @media (max-width: 1600px) {
+      @media (max-width: 1800px) {
         .tabbable .nav-tabs:before {
           min-height: 345px; } }
-    @media (max-width: 1600px) {
+    @media (max-width: 1800px) {
       .tabbable .nav-tabs {
         width: 50%;
         padding-top: 55px;
@@ -1241,7 +1241,7 @@ a {
       margin-bottom: 75px;
       position: relative;
       padding-left: 15px; }
-      @media (max-width: 1600px) {
+      @media (max-width: 1800px) {
         .tabbable .nav-tabs li {
           margin-bottom: 49px; } }
       .tabbable .nav-tabs li a {
@@ -1250,14 +1250,14 @@ a {
         color: #fff;
         font-size: 32px;
         letter-spacing: 1.5px; }
-        @media (max-width: 1600px) {
+        @media (max-width: 1800px) {
           .tabbable .nav-tabs li a {
             letter-spacing: 1.2px;
             font-size: 22px; } }
         .tabbable .nav-tabs li a.active {
           color: #333;
           font-weight: 600; }
-          @media (max-width: 1600px) {
+          @media (max-width: 1800px) {
             .tabbable .nav-tabs li a.active {
               letter-spacing: 1.3px; } }
           .tabbable .nav-tabs li a.active:after {
@@ -1268,7 +1268,7 @@ a {
             background-size: cover;
             position: absolute;
             right: -47px; }
-            @media (max-width: 1600px) {
+            @media (max-width: 1800px) {
               .tabbable .nav-tabs li a.active:after {
                 width: 28px;
                 height: 34px;
@@ -1279,26 +1279,26 @@ a {
     margin: 0;
     border-radius: 2px;
     background-color: #fec517; }
-    @media (max-width: 1600px) {
+    @media (max-width: 1800px) {
       .tabbable > .tab-content {
         width: 50%; } }
   .tabbable .main-description {
     padding: 70px 110px 0 160px; }
-    @media (max-width: 1600px) {
+    @media (max-width: 1800px) {
       .tabbable .main-description {
         padding: 50px 100px 75px 115px; } }
     .tabbable .main-description .page-title {
       color: #fff;
       line-height: 1.2;
       margin-bottom: 50px; }
-      @media (max-width: 1600px) {
+      @media (max-width: 1800px) {
         .tabbable .main-description .page-title {
           margin-bottom: 35px; } }
     .tabbable .main-description p {
       line-height: 1.44;
       margin: 0 auto 60px;
       color: #000; }
-      @media (max-width: 1600px) {
+      @media (max-width: 1800px) {
         .tabbable .main-description p {
           font-size: 16px;
           margin: 0 auto 35px;
@@ -1321,7 +1321,7 @@ a {
       width: 225px;
       height: 65px;
       color: #000; }
-      @media (max-width: 1600px) {
+      @media (max-width: 1800px) {
         .tabbable .main-description .big-link {
           border: 3px solid #fff;
           width: 155px;
@@ -1425,7 +1425,7 @@ a {
     top: 135px;
     z-index: 3;
     font-weight: 600; }
-    @media (max-width: 1600px) {
+    @media (max-width: 1800px) {
       .about-section h2 {
         font-size: 36px;
         left: 0px;
@@ -1441,7 +1441,7 @@ a {
       position: absolute;
       top: 80px;
       right: -265px; }
-      @media (max-width: 1600px) {
+      @media (max-width: 1800px) {
         .about-section .left-part:after {
           width: 285px;
           height: 285px;
@@ -1450,7 +1450,7 @@ a {
   .about-section #doc h2 {
     left: -105px;
     top: 215px; }
-    @media (max-width: 1600px) {
+    @media (max-width: 1800px) {
       .about-section #doc h2 {
         left: -50px;
         top: 140px; } }
@@ -1462,7 +1462,7 @@ a {
     top: auto;
     bottom: -60px;
     right: -45px; }
-    @media (max-width: 1600px) {
+    @media (max-width: 1800px) {
       .about-section #team .left-part:after {
         width: 330px;
         height: 330px;
@@ -1476,7 +1476,7 @@ a {
     top: auto;
     bottom: -80px;
     right: -140px; }
-    @media (max-width: 1600px) {
+    @media (max-width: 1800px) {
       .about-section #projects .left-part:after {
         width: 330px;
         height: 330px;
@@ -1490,7 +1490,7 @@ a {
     top: auto;
     bottom: 0px;
     right: -50px; }
-    @media (max-width: 1600px) {
+    @media (max-width: 1800px) {
       .about-section #job .left-part:after {
         width: 180px;
         height: 180px;
@@ -1503,7 +1503,7 @@ a {
     top: auto;
     bottom: 0px;
     right: -160px; }
-    @media (max-width: 1600px) {
+    @media (max-width: 1800px) {
       .about-section #contact .left-part:after {
         width: 260px;
         height: 260px;
@@ -1513,7 +1513,7 @@ a {
     display: -ms-flexbox;
     display: flex;
     margin-bottom: 10px; }
-    @media (max-width: 1600px) {
+    @media (max-width: 1800px) {
       .about-section .services .nav-tabs {
         max-width: 1165px;
         margin: 0 auto 10px; } }
@@ -1523,7 +1523,7 @@ a {
       -ms-flex-align: center;
           align-items: center;
       margin-right: 140px; }
-      @media (max-width: 1600px) {
+      @media (max-width: 1800px) {
         .about-section .services .nav-tabs li {
           margin-right: 110px; }
           .about-section .services .nav-tabs li:last-child {
@@ -1536,12 +1536,12 @@ a {
         font-size: 26px;
         color: #fff;
         letter-spacing: 1px; }
-        @media (max-width: 1600px) {
+        @media (max-width: 1800px) {
           .about-section .services .nav-tabs li a {
             font-size: 15px; } }
         .about-section .services .nav-tabs li a img {
           margin-right: 15px; }
-          @media (max-width: 1600px) {
+          @media (max-width: 1800px) {
             .about-section .services .nav-tabs li a img {
               max-width: 45px;
               margin-right: 5px; } }
@@ -1637,20 +1637,20 @@ a {
     max-width: 78%;
     position: relative;
     z-index: 2; }
-    @media (max-width: 1600px) {
+    @media (max-width: 1800px) {
       .about-section p {
         font-size: 16px;
         letter-spacing: 0px;
         line-height: 1.4;
         max-width: 82%; } }
 
-@media (max-width: 1600px) {
+@media (max-width: 1400px) {
   .history-section {
     padding-top: 60px; } }
 
 .doc-section {
   padding-top: 170px; }
-  @media (max-width: 1600px) {
+  @media (max-width: 1400px) {
     .doc-section {
       padding-top: 120px; } }
 
@@ -1664,7 +1664,7 @@ a {
   width: 50%;
   z-index: 1;
   position: relative; }
-  @media (max-width: 1600px) {
+  @media (max-width: 1800px) {
     .left-part {
       padding-top: 55px;
       padding-left: 115px; } }
@@ -1675,13 +1675,13 @@ a {
     position: relative;
     z-index: 2;
     color: #fff; }
-    @media (max-width: 1600px) {
+    @media (max-width: 1800px) {
       .left-part .page-title {
         margin-bottom: 85px;
         text-align: left !important;
         font-size: 32px;
         letter-spacing: 0; } }
-  @media (max-width: 1600px) {
+  @media (max-width: 1800px) {
     .left-part p {
       font-size: 16px;
       letter-spacing: 0;
@@ -1698,7 +1698,7 @@ a {
   -ms-flex-pack: justify;
   justify-content: space-between;
   width: 50%; }
-  @media (max-width: 1600px) {
+  @media (max-width: 1800px) {
     .right-part {
       padding: 50px 100px 15px 120px; }
       .right-part > div:last-child p {
@@ -1711,7 +1711,7 @@ a {
   display: block;
   font-weight: bold;
   letter-spacing: 3.5px; }
-  @media (max-width: 1600px) {
+  @media (max-width: 1800px) {
     .white-title {
       letter-spacing: 0px;
       margin-bottom: 14px; } }
@@ -1723,7 +1723,7 @@ a {
   font-weight: 400;
   letter-spacing: 1.5px;
   max-width: 90%; }
-  @media (max-width: 1600px) {
+  @media (max-width: 1800px) {
     .white-title ~ p {
       font-size: 16px;
       letter-spacing: 0;
@@ -1734,7 +1734,7 @@ a {
   max-width: 656px;
   width: 100%;
   padding: 0 10px; }
-  @media (max-width: 1600px) {
+  @media (max-width: 1800px) {
     .project-text {
       width: 55%;
       padding-left: 70px; } }
@@ -1777,7 +1777,7 @@ a {
 
 #projects .right-part {
   padding: 125px 160px 65px; }
-  @media (max-width: 1600px) {
+  @media (max-width: 1800px) {
     #projects .right-part {
       padding: 60px 105px; } }
 
@@ -1793,7 +1793,7 @@ a {
   background-color: #fff;
   min-height: 137px;
   border-radius: 3px; }
-  @media (max-width: 1600px) {
+  @media (max-width: 1800px) {
     #projects .clients a {
       max-width: 225px;
       margin: 0 5px 9px;
@@ -1811,7 +1811,7 @@ a {
   width: 100%;
   margin-bottom: 40px !important;
   padding: 0; }
-  @media (max-width: 1600px) {
+  @media (max-width: 1800px) {
     #job .project-text {
       max-width: 82%; } }
   @media (max-width: 640px) {
@@ -1823,20 +1823,20 @@ a {
 
 #job .right-part {
   padding: 100px 118px 65px 170px; }
-  @media (max-width: 1600px) {
+  @media (max-width: 1800px) {
     #job .right-part {
       padding: 55px 97px 85px 120px; } }
 
 .contact-section {
   padding-top: 170px; }
-  @media (max-width: 1600px) {
+  @media (max-width: 1400px) {
     .contact-section {
       padding-top: 120px; } }
   .contact-section h2 {
     left: -140px;
     font-size: 85px;
     top: 235px; }
-    @media (max-width: 1600px) {
+    @media (max-width: 1800px) {
       .contact-section h2 {
         left: -35px;
         font-size: 36px;
@@ -1844,7 +1844,7 @@ a {
 
 .team-holder {
   padding: 125px 118px 0px 170px; }
-  @media (max-width: 1600px) {
+  @media (max-width: 1800px) {
     .team-holder {
       padding: 60px 35px 25px 60px; } }
   @media (min-width: 993px) {
@@ -1859,7 +1859,7 @@ a {
     text-align: center;
     margin-bottom: 80px;
     margin-right: 23px; }
-    @media (max-width: 1600px) {
+    @media (max-width: 1800px) {
       .team-holder .swiper-slide {
         max-width: 105px;
         margin-right: 40px;
@@ -1877,7 +1877,7 @@ a {
       border-radius: 50%;
       overflow: hidden;
       margin-bottom: 3px; }
-      @media (max-width: 1600px) {
+      @media (max-width: 1800px) {
         .team-holder .swiper-slide img {
           margin-bottom: 10px; } }
     .team-holder .swiper-slide i {
@@ -1885,7 +1885,7 @@ a {
       font-size: 13px;
       letter-spacing: 2px;
       color: #313b0f; }
-      @media (max-width: 1600px) {
+      @media (max-width: 1800px) {
         .team-holder .swiper-slide i {
           font-size: 10px;
           letter-spacing: 1px; } }
@@ -1897,7 +1897,7 @@ a {
       font-size: 14px;
       color: #313b0f;
       letter-spacing: 2px; }
-      @media (max-width: 1600px) {
+      @media (max-width: 1800px) {
         .team-holder .swiper-slide span {
           font-size: 12px;
           letter-spacing: 0; } }
@@ -1908,7 +1908,7 @@ a {
 .jobs-list ul {
   width: 50%;
   margin-bottom: 110px; }
-  @media (max-width: 1600px) {
+  @media (max-width: 1800px) {
     .jobs-list ul {
       margin-bottom: 55px; } }
   .jobs-list ul .orange {
@@ -1916,7 +1916,7 @@ a {
     letter-spacing: 2px;
     font-weight: bold;
     margin-bottom: 20px; }
-    @media (max-width: 1600px) {
+    @media (max-width: 1800px) {
       .jobs-list ul .orange {
         font-size: 22px;
         letter-spacing: 0px; } }
@@ -1931,14 +1931,14 @@ a {
         margin-bottom: 10px; } }
   .jobs-list ul li {
     margin-bottom: 35px; }
-    @media (max-width: 1600px) {
+    @media (max-width: 1800px) {
       .jobs-list ul li {
         margin-bottom: 15px; } }
     .jobs-list ul li a {
       font-size: 24px;
       letter-spacing: 1px;
       color: #333; }
-      @media (max-width: 1600px) {
+      @media (max-width: 1800px) {
         .jobs-list ul li a {
           font-size: 16px;
           letter-spacing: 0px; } }
@@ -1950,7 +1950,7 @@ a {
   width: 220px;
   height: 60px;
   transition: all 0.3s; }
-  @media (max-width: 1600px) {
+  @media (max-width: 1800px) {
     .jobs-list .vacancy-link {
       border: 3px solid #fff;
       width: 175px;
@@ -1967,7 +1967,7 @@ a {
     margin-bottom: 30px;
     letter-spacing: 1px;
     line-height: 1.5; }
-    @media (max-width: 1600px) {
+    @media (max-width: 1800px) {
       .contact-list li {
         font-size: 20px;
         margin-bottom: 10px; } }
@@ -1976,7 +1976,7 @@ a {
     .contact-list li b {
       font-size: 27px;
       color: #fff; }
-      @media (max-width: 1600px) {
+      @media (max-width: 1800px) {
         .contact-list li b {
           font-size: 22px; } }
       @media (max-width: 640px) {
@@ -1991,7 +1991,7 @@ a {
   padding: 75px 118px 65px 170px;
   -ms-flex-pack: justify;
       justify-content: space-between; }
-  @media (max-width: 1600px) {
+  @media (max-width: 1800px) {
     .slider-holder {
       padding: 60px 75px 15px 120px; } }
   .slider-holder .swiper-container {
@@ -1999,7 +1999,7 @@ a {
     height: 495px;
     position: relative;
     margin: 0; }
-    @media (max-width: 1600px) {
+    @media (max-width: 1800px) {
       .slider-holder .swiper-container {
         max-width: 300px;
         height: 360px; } }
@@ -2023,7 +2023,7 @@ a {
     background: url(../images/nav-img.svg) no-repeat;
     background-size: cover;
     transform: rotate(-90deg); }
-    @media (max-width: 1600px) {
+    @media (max-width: 1800px) {
       .slider-holder .swiper-button-prev,
       .slider-holder .swiper-button-next {
         left: 70px;
@@ -2047,7 +2047,7 @@ a {
   .slider-holder .swiper-button-next {
     top: 35%;
     transform: rotate(90deg); }
-    @media (max-width: 1600px) {
+    @media (max-width: 1800px) {
       .slider-holder .swiper-button-next {
         top: 27%; } }
     @media (max-width: 992px) {
@@ -2063,7 +2063,7 @@ a {
     -ms-flex-direction: column;
         flex-direction: column;
     margin-bottom: 30px; }
-    @media (max-width: 1600px) {
+    @media (max-width: 1800px) {
       .slider-holder .swiper-pagination {
         margin-bottom: 5px; } }
     .slider-holder .swiper-pagination span {
@@ -2078,7 +2078,7 @@ a {
       .slider-holder .swiper-pagination span.swiper-pagination-bullet-active {
         color: #fff;
         font-weight: bold; }
-      @media (max-width: 1600px) {
+      @media (max-width: 1800px) {
         .slider-holder .swiper-pagination span {
           font-size: 16px;
           margin-bottom: 11px; } }
@@ -2110,7 +2110,7 @@ a {
       margin-right: 5px; }
     .slider-holder .downnload:hover {
       box-shadow: 3.28px 2.29px 15px 3px rgba(44, 44, 44, 0.2); }
-    @media (max-width: 1600px) {
+    @media (max-width: 1800px) {
       .slider-holder .downnload {
         letter-spacing: 2px;
         margin: 13px 80px 20px auto;
@@ -2137,13 +2137,13 @@ a {
     margin-bottom: 60px;
     color: #fff;
     line-height: 1.1; }
-    @media (max-width: 1600px) {
+    @media (max-width: 1800px) {
       #doc .page-title {
         margin-bottom: 85px;
         font-size: 32px; }
         #doc .page-title > br {
           display: none; } }
-  @media (max-width: 1600px) {
+  @media (max-width: 1800px) {
     #doc {
       padding-top: 0; } }
   @media (max-width: 992px) {
@@ -2162,7 +2162,7 @@ a {
     letter-spacing: 1.5px;
     position: relative;
     z-index: 1; }
-    @media (max-width: 1600px) {
+    @media (max-width: 1800px) {
       #doc .project-text {
         width: 76%;
         padding: 0;
@@ -2184,7 +2184,7 @@ a {
     z-index: 1;
     position: relative;
     overflow: hidden; }
-    @media (max-width: 1600px) {
+    @media (max-width: 1800px) {
       #doc .left-column {
         padding-top: 55px;
         padding-left: 115px; } }
@@ -2196,7 +2196,7 @@ a {
       position: absolute;
       top: 90px;
       right: -195px; }
-      @media (max-width: 1600px) {
+      @media (max-width: 1800px) {
         #doc .left-column:after {
           width: 310px;
           height: 296px;
