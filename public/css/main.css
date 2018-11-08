@@ -1271,6 +1271,13 @@ a {
       .tabbable h2 {
         font-size: 36px;
         top: 100px; } }
+    @media (max-width: 992px) {
+      .tabbable h2 {
+        font-size: 36px;
+        transform: rotate(0deg);
+        top: -80px;
+        left: 50px;
+        color: #fff; } }
   .tabbable .nav-tabs {
     width: 52%;
     padding-top: 70px;
@@ -1281,6 +1288,15 @@ a {
     margin: 0;
     z-index: 1;
     position: relative; }
+    @media (max-width: 1800px) {
+      .tabbable .nav-tabs {
+        width: 50%;
+        padding-top: 55px;
+        padding-left: 100px; } }
+    @media (max-width: 992px) {
+      .tabbable .nav-tabs {
+        width: 100%;
+        padding: 40px 50px; } }
     .tabbable .nav-tabs:before {
       content: '';
       display: block;
@@ -1291,11 +1307,9 @@ a {
       @media (max-width: 1800px) {
         .tabbable .nav-tabs:before {
           min-height: 345px; } }
-    @media (max-width: 1800px) {
-      .tabbable .nav-tabs {
-        width: 50%;
-        padding-top: 55px;
-        padding-left: 100px; } }
+      @media (max-width: 992px) {
+        .tabbable .nav-tabs:before {
+          display: none; } }
     .tabbable .nav-tabs li {
       margin: 0;
       margin-bottom: 75px;
@@ -1304,6 +1318,12 @@ a {
       @media (max-width: 1800px) {
         .tabbable .nav-tabs li {
           margin-bottom: 49px; } }
+      @media (max-width: 992px) {
+        .tabbable .nav-tabs li {
+          padding-left: 0;
+          margin-bottom: 40px; }
+          .tabbable .nav-tabs li:last-child {
+            margin-bottom: 0; } }
       .tabbable .nav-tabs li a {
         display: block;
         width: 100%;
@@ -1314,6 +1334,10 @@ a {
           .tabbable .nav-tabs li a {
             letter-spacing: 1.2px;
             font-size: 22px; } }
+        @media (max-width: 992px) {
+          .tabbable .nav-tabs li a {
+            letter-spacing: 1.2px;
+            font-size: 24px; } }
         .tabbable .nav-tabs li a.active {
           color: #333;
           font-weight: 600; }
@@ -1342,6 +1366,10 @@ a {
     @media (max-width: 1800px) {
       .tabbable > .tab-content {
         width: 50%; } }
+    @media (max-width: 992px) {
+      .tabbable > .tab-content {
+        width: 100%;
+        padding: 40px 50px; } }
   .tabbable .main-description {
     padding: 70px 110px 0 160px; }
     @media (max-width: 1800px) {
@@ -1402,16 +1430,9 @@ a {
   display: none; }
 
 @media (max-width: 992px) {
-  .services > .tab-content {
-    padding: 0 90px; } }
-  @media (max-width: 992px) and (max-width: 640px) {
-    .services > .tab-content {
-      padding: 0 20px; } }
-
-@media (max-width: 992px) {
-    .services > .tab-content .tab-pane {
-      margin: 0;
-      width: 100%; }
+  .services > .tab-content .tab-pane {
+    margin: 0;
+    width: 100%; }
   .services > .nav-tabs {
     -ms-flex-pack: start;
         justify-content: flex-start;
@@ -1443,25 +1464,23 @@ a {
     -ms-flex-direction: column;
         flex-direction: column; }
     .services .tabbable .nav-tabs {
-      padding: 0; }
-      .services .tabbable .nav-tabs li {
-        margin-bottom: 20px; } }
+      padding: 0; } }
+    @media (max-width: 992px) and (max-width: 992px) {
+      .services .tabbable .nav-tabs {
+        padding: 40px 50px; } }
+
+@media (max-width: 992px) {
+      .services .tabbable .nav-tabs li a {
+        font-size: 18px;
+        letter-spacing: 4px; } }
       @media (max-width: 992px) and (max-width: 640px) {
-        .services .tabbable .nav-tabs li {
-          margin-bottom: 0; } }
-
-@media (max-width: 992px) {
         .services .tabbable .nav-tabs li a {
-          font-size: 18px;
-          letter-spacing: 4px; } }
-        @media (max-width: 992px) and (max-width: 640px) {
-          .services .tabbable .nav-tabs li a {
-            font-size: 12px;
-            letter-spacing: 0; } }
+          font-size: 12px;
+          letter-spacing: 0; } }
 
 @media (max-width: 992px) {
-          .services .tabbable .nav-tabs li a:after {
-            display: none; }
+        .services .tabbable .nav-tabs li a:after {
+          display: none; }
     .services .tabbable .main-description {
       padding: 0; }
       .services .tabbable .main-description .page-title {

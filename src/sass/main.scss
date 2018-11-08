@@ -540,6 +540,13 @@
 			font-size: 36px;
 			top: 100px;
 		}
+		@media (max-width: 992px) {
+			font-size: 36px;
+			transform: rotate(0deg);
+		    top: -80px;
+		    left: 50px;
+		    color: $white;
+		}
 	}
 	.nav-tabs {
 		width: 52%;
@@ -551,6 +558,15 @@
 		margin: 0;
 		z-index: 1;
 		position: relative;
+		@media (max-width: 1800px) {
+		    width: 50%;
+		    padding-top: 55px;
+		    padding-left: 100px;
+		}
+		@media (max-width: 992px) {
+		    width: 100%;
+		    padding: 40px 50px;
+		}
 		&:before {
 			content: '';
 			display: block;
@@ -561,11 +577,9 @@
 			@media (max-width: 1800px) {
 				min-height: 345px;
 			}
-		}
-		@media (max-width: 1800px) {
-		    width: 50%;
-		    padding-top: 55px;
-		    padding-left: 100px;
+			@media (max-width: 992px) {
+				display: none;
+			}
 		}
 		li {
 			margin: 0;
@@ -574,6 +588,13 @@
 			padding-left: 15px;
 			@media (max-width: 1800px) {
 				margin-bottom: 49px;
+			}
+			@media (max-width: 992px) {
+				padding-left: 0;
+				margin-bottom: 40px;
+				&:last-child {
+					margin-bottom: 0;
+				}
 			}
 			a {
 				display: block;
@@ -584,6 +605,10 @@
 				@media (max-width: 1800px) {
 					letter-spacing: 1.2px;
 					font-size: 22px;
+				}
+				@media (max-width: 992px) {
+					letter-spacing: 1.2px;
+					font-size: 24px;
 				}
 				&.active {
 					color: #333;
@@ -617,6 +642,10 @@
 		background-color: rgb(254, 197, 23);
 		@media (max-width: 1800px) {
 			width: 50%;
+		}
+		@media (max-width: 992px) {
+			width: 100%;
+			padding: 40px 50px;
 		}
 	}
 	.main-description {
@@ -690,10 +719,6 @@
 	}
 	@media (max-width: 992px) {
 		&>.tab-content {
-			padding: 0 90px;
-			@media (max-width: 640px) {
-				padding: 0 20px;
-			}
 			.tab-pane {
 				margin: 0;
 				width: 100%;
@@ -724,11 +749,10 @@
 			flex-direction: column;
 			.nav-tabs {
 				padding: 0;
+				@media (max-width: 992px) {
+					padding: 40px 50px;
+				}
 				li {
-					margin-bottom: 20px;
-					@media (max-width: 640px) {
-						margin-bottom: 0;
-					}
 					a {
 						font-size: 18px;
 						letter-spacing: 4px;

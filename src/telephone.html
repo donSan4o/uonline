@@ -16,7 +16,6 @@
 
 <body>
     <div id="header" class="d-flex align-items-center justify-content-between">
-        <a href="#" class="menu-mobile"></a>
         <div class="logo-links d-flex aligh-items-center w-100">
             <a href="/" class="logo">
                 <img src="images/logo.svg" alt="logo">
@@ -26,11 +25,32 @@
                 <a href="#" data-toggle="modal" data-target="#choose-plan">Для бизнеса</a>
             </div>
         </div>
+        <a href="#" class="menu-mobile">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
         <ul id="myMenu" class="d-flex align-items-center">
+            <h2>Меню</h2>
             <li data-menuanchor="price"><a href="index.html#price">Тарифы и услуги</a></li>
             <li data-menuanchor="documents"><a href="index.html#documents">Документы</a></li>
             <li data-menuanchor="about"><a href="index.html#about">О нас</a></li>
             <li data-menuanchor="contacts"><a href="index.html#contacts">Контакты</a></li>
+            <div class="social-mobile">
+                <a href="#" data-toggle="modal" data-target="#modal-form" class="big-link d-flex align-items-center justify-content-center">Подключиться</a>
+                <a href="tel:+78126704343" class="my-menu-phone">+7(812) 670-43-43</a>
+                <div id="mobile-footer-socials" class="d-flex align-items-center">
+                    <a href="#">
+                        <img src="images/vk.svg" alt="vk">
+                    </a>
+                    <a href="#">
+                        <img src="images/tg.svg" alt="telegram">
+                    </a>
+                    <a href="#">
+                        <img src="images/in.svg" alt="instagram">
+                    </a>
+                </div>
+            </div>
         </ul>
         <a href="tel:+78126704343" class="phone d-flex align-items-center">+7(812) 670-43-43</a>
     </div>
@@ -230,6 +250,7 @@
     <noscript>Detected missing Javascript support. Certain website features will not operate correctly with Javascript disabled.</noscript>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.3/vendors/scrolloverflow.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.1/fullpage.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js"></script>
