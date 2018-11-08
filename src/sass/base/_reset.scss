@@ -66,6 +66,11 @@ textarea{overflow: auto;}
 		clear: both;
 	}
 }
+.show {
+	&.fader {
+		display: block;	
+	}
+}
 .sp{display: none;}
 .pc{display: block;}
 // Smartphone

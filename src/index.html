@@ -9,13 +9,13 @@
     <title>Uonline</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500i,700,700i,900,900i&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.3/fullpage.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.min.css">
     <link rel="stylesheet" type="text/css" href="css/main.min.css">
 </head>
 
 <body>
     <div id="header" class="d-flex align-items-center justify-content-between">
-        <a href="#" class="menu-mobile"></a>
         <div class="logo-links d-flex aligh-items-center w-100">
             <a href="/" class="logo">
                 <img src="images/logo.svg" alt="logo">
@@ -25,11 +25,32 @@
                 <a href="#" data-toggle="modal" data-target="#choose-plan">Для бизнеса</a>
             </div>
         </div>
+        <a href="#" class="menu-mobile">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
         <ul id="myMenu" class="d-flex align-items-center">
+            <h2>Меню</h2>
             <li data-menuanchor="price"><a href="#price">Тарифы и услуги</a></li>
             <li data-menuanchor="documents"><a href="#documents">Документы</a></li>
             <li data-menuanchor="about"><a href="#about">О нас</a></li>
             <li data-menuanchor="contacts"><a href="#contacts">Контакты</a></li>
+            <div class="social-mobile">
+                <a href="#" data-toggle="modal" data-target="#modal-form" class="big-link d-flex align-items-center justify-content-center">Подключиться</a>
+                <a href="tel:+78126704343" class="my-menu-phone">+7(812) 670-43-43</a>
+                <div id="mobile-footer-socials" class="d-flex align-items-center">
+                    <a href="#">
+                        <img src="images/vk.svg" alt="vk">
+                    </a>
+                    <a href="#">
+                        <img src="images/tg.svg" alt="telegram">
+                    </a>
+                    <a href="#">
+                        <img src="images/in.svg" alt="instagram">
+                    </a>
+                </div>
+            </div>
         </ul>
         <a href="tel:+78126704343" class="phone d-flex align-items-center">+7(812) 670-43-43</a>
     </div>
@@ -64,7 +85,7 @@
                 </div>
             </div>
         </div>
-        <div class="section padding-section">
+        <div class="section padding-section" data-percentage="10" data-centered="true">
             <div class="service-holder d-flex justify-content-between">
                 <a href="internet.html">
                     <h2>Интернет</h2>
@@ -101,9 +122,8 @@
         <div class="section padding-section about-section doc-section">
             <div role="tabpanel" class="tab-content" id="doc">
                 <h2>Документы</h2>
-                <div class="d-flex">
+                <div class="d-flex mobile-flex-wrap">
                     <div class="left-column w-50">
-
                         <span class="page-title d-block">Соблюдаем<br> все стандарты</span>
                         <p class="project-text">
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
@@ -144,14 +164,14 @@
                 <div class="tab-content">
                     <h2>О нас</h2>
                     <div role="tabpanel" class="tab-pane active" id="history">
-                        <div class="d-flex justify-content-between">
+                        <div class="d-flex justify-content-between mobile-flex-wrap">
                             <div class="left-part">
                                 <span class="w-100 page-title d-block m-115">Ю онлайн - это...</span>
                                 <p>
                                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,  with the release of Letraset sheets contnd more recently with desktop
                                 </p>        
                             </div>
-                            <div class="right-part">
+                            <div class="right-part mobile-flex-wrap">
                                 <div>
                                     <span class="white-title">Наша миссия</span>
                                     <p>
@@ -168,7 +188,7 @@
                         </div>
                     </div>
                     <div role="tabpanel" class="tab-pane" id="team">
-                        <div class="d-flex justify-content-between">
+                        <div class="d-flex justify-content-between mobile-flex-wrap">
                             <div class="left-part">
                                 <span class="page-title d-block m-115">Наша команда</span>
                                 <p class="project-text">
@@ -176,7 +196,7 @@
                                 </p>
                             </div>
                             <div class="team-holder d-flex flex-wrap right-part">
-                                <div class="swiper-wrapper">
+                                <div class="swiper-wrapper mobile-flex-wrap">
                                     <div class="swiper-slide">
                                         <img src="images/team-image.png" alt="team-member-photo">
                                         <i>Должность</i>
@@ -222,7 +242,7 @@
                         </div>
                     </div>
                     <div role="tabpanel" class="tab-pane" id="projects">
-                        <div class="d-flex justify-content-between projects-description">
+                        <div class="d-flex justify-content-between projects-description mobile-flex-wrap">
                             <div class="left-part">
                                 <span class="page-title d-block m-115">Наши проекты</span>
                                 <p class="project-text">
@@ -240,7 +260,7 @@
                         </div>
                     </div>
                     <div role="tabpanel" class="tab-pane" id="job">
-                        <div class="d-flex justify-content-between">
+                        <div class="d-flex justify-content-between mobile-flex-wrap">
                             <div class="left-part">
                                 <span class="page-title d-block m-115">Создаем рабочие места</span>
                                 <p class="project-text">
@@ -272,7 +292,7 @@
         <div class="section padding-section contact-section about-section">
             <div role="tabpanel" class="tab-pane tab-content" id="contact">
                 <h2>Контакты</h2>
-                <div class="d-flex justify-content-between">
+                <div class="d-flex justify-content-between mobile-flex-wrap">
                     <div class="left-part">
                     <span class="page-title d-block m-115">Как нас найти</span>
                     <ul class="contact-list">
@@ -359,6 +379,7 @@
     <noscript>Detected missing Javascript support. Certain website features will not operate correctly with Javascript disabled.</noscript>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.3/vendors/scrolloverflow.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.1/fullpage.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js"></script>
