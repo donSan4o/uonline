@@ -121,7 +121,7 @@
 	color: $white;
   	&:hover {
   		color: $white;
-  		background: $orange;
+  		background: $lightgreen;
   	}
   	@media (max-width: 1800px) {
 		width: 175px;
@@ -247,6 +247,9 @@
 		@media (max-width: 450px) {
 			width: 95%;
 		}
+		@media (max-width: 360px) {
+			min-height: 250px;
+		}
 		h2 {
 			font-size: 36px;
 			margin-bottom: 20px;
@@ -262,12 +265,18 @@
 				font-size: 32px;
     			margin-bottom: 20px;
 			}
+			@media (max-width: 360px) {
+				font-size: 26px;
+			}
 		}
 		p {
 			font-size: 20px;
 			color: $white;
 			@media (max-width: 1800px) {
 				font-size: 16px;
+			}
+			@media (max-width: 360px) {
+				font-size: 14px;
 			}
 		}
 		img {
@@ -279,6 +288,9 @@
 			@media (max-width: 450px) {
 				top: 80px;
 				right: 20px;
+			}
+			@media (max-width: 360px) {
+				max-width: 50%;
 			}
 			&.service-internet {
 				top: 40px;
@@ -723,7 +735,9 @@
 				height: 45px;
 			}
 			&:hover {
-				box-shadow: 3.277px 2.294px 15px 3px rgba(44, 44, 44, 0.2);
+			    background: #a1c438;
+    			box-shadow: 3.28px 2.29px 15px 3px rgba(44,44,44,.2);
+    			color: #fff;
 			}
 		}
 	}
@@ -1006,7 +1020,7 @@
 			margin-bottom: 10px;
 			@media (max-width: 1800px) {
 				max-width: 1165px;
-				margin: 0 auto 10px;
+				margin: 0 auto 30px;
 			}
 			@media (max-width: 992px) {
 				margin: 0 auto 25px;
@@ -1043,7 +1057,10 @@
 					}
 					@media (max-width: 640px) {
 						font-size: 16px;						
-					}					
+					}	
+					@media (max-width: 360px) {
+						font-size: 13px;
+					}				
 					&.active {
 						&:before {
 	                        content: '';
@@ -1070,6 +1087,15 @@
 					}
 				}
 
+			}
+		}
+		.right-part {
+			div {
+				&:last-child {
+					p {
+						margin-bottom: 0;
+					}
+				}
 			}
 		}
 		@media (max-width: 992px) {
@@ -1101,6 +1127,9 @@
 						    @media (max-width: 640px) {
 					    	    font-size: 14px;
 						    }
+						    @media (max-width: 360px) {
+					    	    font-size: 12px;
+						    }
 						}
 					}
 					.right-part {
@@ -1119,6 +1148,9 @@
 							    margin-bottom: 0;
 							    @media (max-width: 640px) {
 							    	font-size: 14px;
+							    }
+							    @media (max-width: 360px) {
+							    	font-size: 12px;
 							    }
 							}
 							&:last-child {
@@ -1160,6 +1192,7 @@
 .left-part {
     padding-top: 65px;
     padding-left: 160px;
+    padding-bottom: 110px;
     border-radius: 2px;
     background-color: #a1c438;
     box-shadow: 5px 0 15.04px 0.96px rgba(44,44,44,.46);
@@ -1170,6 +1203,12 @@
     @media (max-width: 1800px) {
 		padding-top: 55px;
     	padding-left: 115px;
+    	padding-bottom: 160px;
+    }
+    @media (max-width: 1400px) {
+		padding-top: 55px;
+    	padding-left: 115px;
+    	padding-bottom: 70px;
     }
     @media (max-width: 992px) {
     	width: 100%;
@@ -1352,13 +1391,17 @@
 			display: flex;
 			align-items: center;
 			justify-content: center;
-			width: 48%;
+			width: 47%;
 			margin: 0 auto 10px;
 	  		background-color: $white;
 			min-height: 137px;
 			border-radius: 3px;
 			@media (max-width: 1800px) {
-				max-width: 225px;
+				margin: 0 5px 9px;
+				height: auto;
+				min-height: 100px;
+			}
+			@media (max-width: 1400px) {
 				margin: 0 5px 9px;
 				height: 100px;
 				min-height: 100px;
@@ -1379,10 +1422,6 @@
 }
 #job {
 	.project-text {
-		max-width: 630px;
-		width: 100%;
-		margin-bottom: 40px !important;
-		padding: 0;
 		@media (max-width: 1800px) {
 			max-width: 82%;
 		}
@@ -1431,6 +1470,7 @@
 	    }
 	}
 	.map-holder {
+		padding: 0;
 		@media (max-width: 992px) {
 			min-height: 420px;
 			padding: 0;
@@ -1459,7 +1499,6 @@
 	    margin-right: 23px;
 	    @media (max-width: 1800px) {
 	    	max-width: 105px;
-	    	margin-right: 40px;
 	    	margin-bottom: 25px;
 	    }
 	    @media (max-width: 992px) {
@@ -1573,6 +1612,8 @@
 }
 .contact-list {
 	margin-bottom: 95px;
+	position: relative;
+	z-index: 1;
 	@media (max-width: 640px) {
 		margin-bottom: 0;
 	}
@@ -1815,6 +1856,9 @@
 		@media (max-width: 450px) {
 			width: 85%;
 		}
+		@media (max-width: 360px) {
+			font-size: 12px;
+		}
 	}
 	.left-column {
 		padding-top: 65px;
@@ -1875,6 +1919,11 @@
 @media (max-width: 450px) {
 	.history-section {
 		padding-top: 100px;
+	}	
+}
+@media (max-width: 360px) {
+	.history-section {
+		padding: 50px 0 100px !important;
 	}	
 }
 

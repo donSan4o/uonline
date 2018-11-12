@@ -4,7 +4,7 @@ $(document).ready(initPage);
 function initPage() {
     $('#fullpage').fullpage({
         responsiveHeight: '570',
-        responsiveWidth: '640',
+        responsiveWidth: '769',
         licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
         fixedElements: '#header,#footer-socials,#footer-callback, #fixed-bg',
         anchors: ['main', 'price', 'documents', 'about','contacts'],

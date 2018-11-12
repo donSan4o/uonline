@@ -66,10 +66,10 @@
     color: #f2f2f2;
     bottom: 2.2vw;
     @media (max-width: 1900px) {
-        bottom: 15px;
+        bottom: 25px;
         right: 115px;
-        width: 25px;
-        height: 25px;
+        width: 40px;
+        height: 40px;
     }
     @media (max-width: 992px) {
         display: none;
@@ -77,19 +77,40 @@
 }
 .mouse {
     position: fixed;
-    bottom: 35px;
+    bottom: 15px;
     left: 0;
     right: 0;
     margin: 0 auto;
-    width: 40px;
-    height: 45px;
+    border: 2px solid #ffffff;
+    border-radius: 25px;
+    display: block;
+    height: 40px;
+    width: 25px;
     z-index: 9;
-    @media (max-width: 1800px) {
-        bottom: 25px;
-        width: 27px;
-        height: 27px;
-    }
     @media (max-width: 992px) {
         display: none;
+    }
+    span {
+        animation-duration: 2s;
+        animation-fill-mode: both;
+        animation-iteration-count: infinite;
+        animation-name: scroll;
+        background: none repeat scroll 0 0 #ffffff;
+        border: 1px solid transparent;
+        border-radius: 4px;
+        display: block;
+        height: 4px;
+        margin: 6px auto;
+        width: 4px;
+    }
+    @keyframes scroll {
+        0% {
+            opacity: 1;
+            transform: translateY(0px);
+        }
+        100% {
+            opacity: 0;
+            transform: translateY(20px);
+        }
     }
 }
