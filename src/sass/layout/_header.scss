@@ -307,9 +307,6 @@
                         justify-content: center;
                         margin-bottom: 70px;
                         @media (max-width: 640px) {
-                            font-size: 22px;
-                        }
-                        @media (max-width: 360px) {
                             font-size: 18px;
                             margin-bottom: 30px;
                         }
@@ -386,9 +383,6 @@
                     }
                 }
                 @media (max-width: 640px) {
-                    min-height: 70px;
-                }
-                @media (max-width: 360px) {
                     min-height: 50px;
                 }
                 &.active {
@@ -430,10 +424,6 @@
                         margin-left: 55px;
                     }
                     @media (max-width: 640px) {
-                        font-size: 22px;
-                        margin-left: 20px;
-                    }
-                    @media (max-width: 360px) {
                         font-size: 16px;
                         margin-left: 20px;
                     }
