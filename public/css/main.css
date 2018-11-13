@@ -194,11 +194,11 @@ a {
   padding: 0;
   left: 0;
   right: 0;
-  background: linear-gradient(to right, #072738 100%, #144e6c 0%); }
+  background: linear-gradient(to right, #072738 100%, #144e6c 0%);
+  padding-left: 115px; }
   @media (max-width: 1800px) {
     #header {
-      height: 60px;
-      padding-left: 115px; } }
+      height: 60px; } }
   @media (max-width: 992px) {
     #header {
       height: auto;
@@ -567,7 +567,7 @@ a {
           height: 10px;
           background: #fec517;
           position: absolute;
-          top: -16px;
+          top: -26px;
           left: 0;
           right: 0;
           margin: 0 auto; }
@@ -606,7 +606,7 @@ a {
             height: 10px;
             background: #fec517;
             position: absolute;
-            top: -16px;
+            top: -26px;
             left: 0;
             right: 0;
             margin: 0 auto; }
@@ -1057,12 +1057,9 @@ a {
     color: #fff; }
 
 .main-description {
-  max-width: 1800px;
   width: 100%;
-  margin: 0 auto; }
-  @media (max-width: 1800px) {
-    .main-description {
-      padding-left: 115px; } }
+  margin: 0 auto;
+  padding-left: 115px; }
   @media (max-width: 992px) {
     .main-description {
       padding: 0 50px; } }
@@ -2233,6 +2230,10 @@ a {
   @media (max-width: 640px) {
     #job .right-part {
       padding: 30px; } }
+
+@media (max-width: 420px) {
+  .contact-section {
+    padding-top: 70px; } }
 
 .contact-section h2 {
   left: -140px;

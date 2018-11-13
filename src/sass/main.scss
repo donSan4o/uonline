@@ -155,12 +155,9 @@
   	}
 }
 .main-description {
-	max-width: 1800px;
 	width: 100%;
 	margin: 0 auto;
-	@media (max-width: 1800px) {
-    	padding-left: 115px;
-	}
+	padding-left: 115px;
 	@media (max-width: 992px) {
 		padding: 0 50px;
 	}
@@ -1446,6 +1443,9 @@
 	}
 }
 .contact-section {
+	@media (max-width: 420px) {
+		padding-top: 70px;
+	}
 	h2 {
 	    left: -140px;
 	    font-size: 85px;
