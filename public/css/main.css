@@ -1074,11 +1074,16 @@ a {
   .medium-link:hover {
     color: #fff; }
 
+.title-page .main-description {
+  margin-top: -220px; }
+  @media (max-width: 1800px) {
+    .title-page .main-description {
+      margin-top: 0; } }
+
 .main-description {
   width: 100%;
   margin: 0 auto;
-  padding-left: 155px;
-  margin-top: -220px; }
+  padding-left: 155px; }
   @media (max-width: 1800px) {
     .main-description {
       padding-left: 115px;
