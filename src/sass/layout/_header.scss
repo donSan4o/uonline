@@ -4,14 +4,12 @@
     z-index: 99;
     text-align: center;
     top: 0;
-    padding: 0;
     left: 0;
     right: 0;
     background: linear-gradient(to right, #072738 100%, #144e6c 0%);
-    padding-left: 115px;
-    padding-right: 20px;
     @media (max-width: 1800px) {
         height: 60px;
+        padding-left: 115px;
     }
     @media (max-width: 992px) {
         height: auto;
@@ -21,7 +19,7 @@
         padding-right: 20px;
     }
     .header-inner {
-        max-width: 1800px;
+        max-width: 1850px;
         width: 100%;
         margin: 0 auto;
         .menu-mobile {
@@ -122,7 +120,7 @@
                 width: 100%;
             }
             .logo {
-                margin-right: 20px;
+                margin-right: 50px;
                 max-width: 230px;
                 width: 100%;
                 flex-shrink: 0;
@@ -211,10 +209,10 @@
             }
         }
         .phone {
-            font-size: 24px;
+            font-size: 18px;
             line-height: 1.2;
             color: $white;
-            margin: 0 0 0 25px;
+            margin: 0 0 0 95px;
             margin-top: 0px;
             flex-shrink: 0;
             @media (max-width: 1800px) {
@@ -355,7 +353,7 @@
                 }
             }
             li {
-                margin-left: 3vw;
+                margin-left: 2.2vw;
                 @media (max-width: 1800px) {
                     margin-left: 50px;
                 }
@@ -370,12 +368,17 @@
                     margin: 0;
                     min-height: 90px;
                     justify-content: space-around;
+                    position: relative;
                     &:before {
                         content: '';
                         display: block;
                         height: 3px;
                         width: 100%;
                         background: linear-gradient(0deg, rgb(29, 110, 153) 0%, rgba(185, 210, 223, 0.5) 69%, rgba(255, 255, 255, 0) 100%);
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        right: 0;
                     }
                 }
                 @media (max-width: 640px) {
@@ -390,7 +393,7 @@
                             height: 10px;
                             background: $orange;
                             position: absolute;
-                            top: -29px;
+                            top: -33px;
                             left: 0;
                             right: 0;
                             margin: 0 auto;
@@ -408,7 +411,7 @@
                     margin-left: 0;
                 }
                 a {
-                    font-size: 1.2vw;
+                    font-size: 20px;
                     color: $white;
                     position: relative;
                     @media (max-width: 1800px) {
@@ -429,7 +432,7 @@
                         height: 10px;
                         background: $orange;
                         position: absolute;
-                        top: -29px;
+                        top: -33px;
                         left: 0;
                         right: 0;
                         margin: 0 auto;
@@ -443,10 +446,17 @@
                     }
                 }
                 &.online-pay {
-                    margin-left: 3.2vw;
+                    margin-left: 5vw;
+                    @media (max-width: 1800px) {
+                        margin-left: 3.5vw;
+                    }
+                    @media (max-width: 992px) {
+                        margin-left: 0;
+                    }
                     a {
                         border: 3px solid $white;
-                        padding: 5px 20px;
+                        padding: 0px 30px;
+                        font-size: 19px;
                         @media (max-width: 768px) {
                             border: 3px solid #fff;
                             padding: 5px 10px;
@@ -455,11 +465,15 @@
                             margin: 20px auto;
                         }
                         &:hover {
-                            &:before {
+                            color: #072638;
+                            background: $white;
+                            &:after {
                                 display: none;
-                            }
+                            }    
                         }
+
                     }
+
                 }
             }
         }

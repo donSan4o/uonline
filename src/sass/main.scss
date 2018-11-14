@@ -157,7 +157,12 @@
 .main-description {
 	width: 100%;
 	margin: 0 auto;
-	padding-left: 115px;
+	padding-left: 155px;
+	margin-top: -220px;
+	@media (max-width: 1800px) {
+		padding-left: 115px;
+		margin-top: 0;
+	}
 	@media (max-width: 992px) {
 		padding: 0 50px;
 	}
