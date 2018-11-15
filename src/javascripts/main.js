@@ -13,7 +13,7 @@ function initPage() {
             counter++;
         }
     }
-    var foo = setInterval(updateCounter , 50);
+    var foo = setInterval(updateCounter , 20);
     $('#fullpage').fullpage({
         responsiveHeight: '570',
         responsiveWidth: '769',
