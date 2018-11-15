@@ -1951,3 +1951,74 @@
 		padding-bottom: 70px;
 	}
 } 
+.loadingpage {
+    width: 100vw;
+    height: 100vh;
+    background: #161616;
+    position: fixed;
+    z-index: 999;
+    overflow: hidden;
+    &:before {
+        content: '';
+        width: 51%;
+        height: 100%;
+        background: #a1c438;
+        position: absolute;
+        z-index: 999;
+        left: 0%;
+        top: 0%;
+    }
+    &:after {
+    	content: '';
+	    width: 51%;
+	    height: 100%;
+	    background: #a1c438;
+	    position: absolute;
+	    z-index: 998;
+	    right: 0%;
+	    top: 0%;	
+    }
+    .counter {
+	    margin: auto;
+	    position: absolute;
+	    top: 50%;
+	    left: 50%;
+	    transform: translate(-50%, -50%);
+	    z-index: 999;
+        display: flex;
+    	flex-direction: column;
+    	align-items: center;
+    	img {
+    		width: 300px;
+    		margin-bottom: 30px;
+    	}
+		span {
+		    margin: 0;
+		    padding: 0;
+		    color: $white;
+		    font-size: 5rem;
+		    font-weight: bolder;
+		}
+	}
+	&.pageisloaded {
+	    visibility: hidden;
+	    pointer-events: none;
+	    transform: translateY(-100%);
+	    transition: transform 1s 1.3s ease-out;
+		&:before {
+		    content: '';
+		    transform: translateX(-100%);
+		    transition: all 1s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+		}
+		&:after {
+		    content: '';
+		    transform: translateX(100%);
+		    transition: all 1s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+		}
+		.counter {
+		    opacity: 0;
+		    transition: all 0.3s ease-out;
+		}
+	}
+}
+/******** when page is loaded **********/
