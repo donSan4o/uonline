@@ -9,7 +9,8 @@
     background: linear-gradient(to right, #072738 100%, #144e6c 0%);
     @media (max-width: 1800px) {
         height: 60px;
-        padding-left: 115px;
+        padding-left: 40px;
+        padding-right: 20px;
     }
     @media (max-width: 992px) {
         height: auto;
@@ -22,6 +23,7 @@
         max-width: 1850px;
         width: 100%;
         margin: 0 auto;
+        height: 100%;
         .menu-mobile {
             display: none;
             width: 55px;
@@ -115,11 +117,14 @@
             }
         }
         .logo-links {
+            height: 100%;
             @media (max-width: 992px) {
                 max-width: 100%;
                 width: 100%;
             }
             .logo {
+                display: flex;
+                align-items: center;
                 margin-right: 50px;
                 max-width: 230px;
                 width: 100%;
@@ -163,14 +168,15 @@
                     padding: 0;
                 }
                 a {
-                    font-size: 22px;
+                    font-size: 20px;
                     transition: all 0.3s;
                     color: $white;
                     margin-right: 10px;
                     height: 40px;
                     padding: 0 15px;
                     display: flex;
-                    border: 3px solid transparent;
+                    align-items: center;
+                    border: 2px solid transparent;
                     @media (max-width: 1800px) {
                         font-size: 15px;
                         height: 30px;
@@ -180,7 +186,7 @@
                         align-items: center;
                     }
                     @media (max-width: 1400px) {
-                        font-size: 13px;
+                        font-size: 14px;
                     }
                     @media (max-width: 992px) {
                         font-size: 19px;
@@ -203,7 +209,7 @@
                     }
                     &:hover,
                     &.active {
-                        border: 3px solid rgb(161, 196, 56);
+                        border: 2px solid rgb(161, 196, 56);
                     }
                 }
             }
@@ -246,9 +252,6 @@
             }
             h2 {
                 display: none;
-            }
-            @media (min-width: 993px) and (max-width: 1800px) {
-                margin-top: -10px;
             }
             @media (max-width: 992px) {
                 position: fixed;
@@ -399,7 +402,7 @@
                             margin: 0 auto;
                             @media (max-width: 1800px) {
                                 height: 5px;
-                                top: -17px;
+                                top: -22px;
                             }
                             @media (max-width: 992px) {
                                 display: none;
@@ -411,12 +414,13 @@
                     margin-left: 0;
                 }
                 a {
+                    display: block;
                     font-size: 20px;
                     color: $white;
                     position: relative;
                     @media (max-width: 1800px) {
                         letter-spacing: 0px;
-                        font-size: 16px;
+                        font-size: 14px;
                     }
                     @media (max-width: 992px) {
                         font-size: 30px;
@@ -438,7 +442,7 @@
                         margin: 0 auto;
                         @media (max-width: 1800px) {
                             height: 5px;
-                            top: -17px;
+                            top: -22px;
                         }
                         @media (max-width: 992px) {
                             display: none;
@@ -454,9 +458,13 @@
                         margin-left: 0;
                     }
                     a {
-                        border: 3px solid $white;
-                        padding: 0px 30px;
+                        border: 2px solid $white;
+                        padding: 7px 30px;
                         font-size: 19px;
+                        @media (max-width: 1800px) {
+                            font-size: 14px;
+                            padding: 5px 20px;
+                        }
                         @media (max-width: 768px) {
                             border: 3px solid #fff;
                             padding: 5px 10px;
