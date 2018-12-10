@@ -1004,7 +1004,7 @@ a {
   z-index: 2; }
 
 .page-title {
-  font-size: 3vw;
+  font-size: 1.8vw;
   color: #beeb38;
   margin-bottom: 10px;
   font-weight: bold; }
@@ -1012,7 +1012,7 @@ a {
     .page-title {
       letter-spacing: 0px;
       margin-bottom: 10px;
-      font-size: 2.8vw;
+      font-size: 1.8vw;
       line-height: 1; } }
   @media (max-width: 992px) {
     .page-title {
@@ -1511,16 +1511,21 @@ a {
     box-shadow: 5px 0px 15.04px 0.96px rgba(44, 44, 44, 0.46);
     margin: 0;
     z-index: 1;
-    position: relative; }
+    position: relative;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    min-height: 635px; }
     @media (max-width: 1800px) {
       .tabbable .nav-tabs {
         width: 50%;
         padding-top: 55px;
-        padding-left: 100px; } }
+        padding-left: 100px;
+        min-height: 540px; } }
     @media (max-width: 992px) {
       .tabbable .nav-tabs {
         width: 100%;
-        padding: 40px 50px; } }
+        padding: 40px 50px;
+        min-height: auto; } }
     .tabbable .nav-tabs:before {
       content: '';
       display: block;
@@ -1530,7 +1535,7 @@ a {
       position: absolute; }
       @media (max-width: 1800px) {
         .tabbable .nav-tabs:before {
-          min-height: 345px; } }
+          min-height: 435px; } }
       @media (max-width: 992px) {
         .tabbable .nav-tabs:before {
           display: none; } }
@@ -1597,38 +1602,46 @@ a {
     @media (max-width: 640px) {
       .tabbable > .tab-content {
         padding: 30px; } }
+    .tabbable > .tab-content .tab-pane {
+      height: 100%; }
   .tabbable .main-description {
-    padding: 70px 110px 0 160px; }
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    padding: 70px 110px 45px 130px;
+    height: 100%; }
     @media (max-width: 1800px) {
       .tabbable .main-description {
-        padding: 50px 100px 75px 115px; } }
+        padding: 45px 70px 45px 70px; } }
     .tabbable .main-description .page-title {
       color: #fff;
       line-height: 1.2;
-      margin-bottom: 50px; }
+      margin-bottom: 30px; }
       @media (max-width: 1800px) {
         .tabbable .main-description .page-title {
-          margin-bottom: 35px; } }
+          margin-bottom: 30px; } }
     .tabbable .main-description p {
       line-height: 1.44;
-      margin: 0 auto 60px;
-      color: #000; }
+      margin: 0;
+      color: #000;
+      font-size: 18px; }
       @media (max-width: 1800px) {
         .tabbable .main-description p {
           font-size: 16px;
-          margin: 0 auto 35px;
           line-height: 1.3;
-          letter-spacing: 0px; } }
+          letter-spacing: 0px;
+          margin-bottom: 20px; } }
       @media (max-width: 640px) {
         .tabbable .main-description p {
-          font-size: 14px;
+          font-size: 16px;
           margin: 0 auto 15px; } }
       @media (max-width: 370px) {
         .tabbable .main-description p {
           max-height: 130px;
-          overflow-y: scroll;
-          font-size: 14px;
-          margin: 0 auto 15px; } }
+          overflow-y: scroll; } }
     .tabbable .main-description .big-link {
       border: 5px solid #fff;
       background-color: #ffc600;
@@ -1702,7 +1715,9 @@ a {
         padding: 30px; } }
     @media (max-width: 992px) and (max-width: 640px) {
       .services .tabbable .nav-tabs li {
-        margin-bottom: 15px; } }
+        margin-bottom: 15px; }
+        .services .tabbable .nav-tabs li:last-child {
+          margin-bottom: 0; } }
 
 @media (max-width: 992px) {
       .services .tabbable .nav-tabs li a {
@@ -2746,6 +2761,50 @@ a {
       height: 100% !important; }
   .about-section {
     padding-bottom: 70px; } }
+
+.telephone .tabbable .main-description {
+  padding: 70px 110px 45px 130px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+  @media (max-width: 1800px) {
+    .telephone .tabbable .main-description {
+      padding: 45px 70px 45px 70px; } }
+  @media (max-width: 992px) {
+    .telephone .tabbable .main-description {
+      padding: 0; } }
+
+.telephone .tabbable .nav-tabs {
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  min-height: 635px; }
+  @media (max-width: 1800px) {
+    .telephone .tabbable .nav-tabs {
+      min-height: 540px; }
+      .telephone .tabbable .nav-tabs:before {
+        top: 50%;
+        transform: translateY(-50%); } }
+  @media (max-width: 992px) {
+    .telephone .tabbable .nav-tabs {
+      min-height: auto; } }
+
+.data .tabbable .nav-tabs {
+  -ms-flex-pack: center;
+      justify-content: center;
+  min-height: 635px; }
+  @media (max-width: 1800px) {
+    .data .tabbable .nav-tabs {
+      min-height: 540px; } }
+  @media (max-width: 992px) {
+    .data .tabbable .nav-tabs {
+      min-height: auto; } }
+  .data .tabbable .nav-tabs:before {
+    min-height: 200px;
+    top: 50%;
+    transform: translateY(-50%); }
 
 .loadingpage {
   width: 100vw;
