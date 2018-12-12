@@ -885,6 +885,7 @@
 			opacity: 0.5;
 		}
 		@media (max-width: 640px) {
+			top: -90px;
 			left: 30px;
 			font-size: 32px;
 		}
@@ -1948,7 +1949,7 @@
 }
 @media (max-width: 360px) {
 	.history-section {
-		padding: 50px 0 100px !important;
+		padding: 50px 0 35px !important;
 	}	
 }
 

@@ -1773,6 +1773,7 @@ a {
       opacity: 0.5; } }
   @media (max-width: 640px) {
     .about-section h2 {
+      top: -90px;
       left: 30px;
       font-size: 32px; } }
 
@@ -2751,7 +2752,7 @@ a {
 
 @media (max-width: 360px) {
   .history-section {
-    padding: 50px 0 100px !important; } }
+    padding: 50px 0 35px !important; } }
 
 @media (max-height: 570px) {
   .padding-section {
