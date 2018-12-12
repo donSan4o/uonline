@@ -2742,13 +2742,6 @@ a {
   .fp-tableCell {
     height: auto !important; } }
 
-@media (max-width: 570px) {
-  .padding-section {
-    min-height: 100%;
-    height: 100% !important; }
-    .padding-section .fp-tableCell {
-      height: 100% !important; } }
-
 @media (max-width: 450px) {
   .history-section {
     padding-top: 40px; } }
@@ -2757,7 +2750,7 @@ a {
   .history-section {
     padding: 75px 0 35px !important; } }
 
-@media (max-height: 400px) {
+@media (max-height: 570px) {
   .padding-section {
     min-height: 100%;
     height: 100% !important; }
