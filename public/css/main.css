@@ -2295,10 +2295,6 @@ a {
     #job .right-part {
       padding: 30px; } }
 
-@media (max-width: 420px) {
-  .contact-section {
-    padding-top: 40px; } }
-
 .contact-section h2 {
   left: -140px;
   font-size: 85px;
@@ -2759,9 +2755,7 @@ a {
     min-height: 100%;
     height: 100% !important; }
     .padding-section .fp-tableCell {
-      height: 100% !important; }
-  .about-section {
-    padding-bottom: 70px; } }
+      height: 100% !important; } }
 
 .telephone .tabbable .main-description {
   padding: 70px 110px 45px 130px;
