@@ -28,7 +28,7 @@ function initPage() {
     }
     var foo = setInterval(updateCounter , 20);
     $('#fullpage').fullpage({
-        responsiveHeight: '570',
+        responsiveHeight: '700',
         responsiveWidth: '769',
         licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
         fixedElements: '#header,.footer, #fixed-bg',
