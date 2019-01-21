@@ -2018,6 +2018,7 @@
     position: fixed;
     z-index: 999;
     overflow: hidden;
+    visibility: visible;
     &:before {
         content: '';
         width: 51%;
@@ -2119,5 +2120,4 @@
 			margin-right: 10px;
 		}
 	}
-
 }

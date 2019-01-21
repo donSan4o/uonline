@@ -321,44 +321,52 @@
             </div>
         </div>
         <div class="modal fade" id="modal-form" tabindex="-1" role="dialog" aria-labelledby="modal-form" aria-hidden="true">
+            <img src="images/logo.svg" alt="logo" class="modal-logo">
+            <a href="" class="close-modal" data-dismiss="modal"></a>
             <div class="modal-dialog modal-dialog-centered" role="document">
+
                 <div class="modal-content">
-                    <a href="" class="close-modal" data-dismiss="modal"></a>
                     <div class="modal-header d-flex flex-column align-items-center">
-                        <span class="page-title d-block text-center orange">Верное решение</span>
-                        <p class="text-center">Сейчас мы вам перезвоним и решим,<br> как мы можем Вам помочь</p>
+                        <span class="page-title d-block text-center orange">Заполните заявку</span>
                     </div>
                     <div class="modal-body">
                         <form method="" action="">
                             <div class="form-group d-flex align-items-center justify-content-between">
-                                <label for="name">Ваше имя</label>
-                                <input type="text" class="form-control" id="name" value="">
+                                <input type="text" class="form-control" id="company" placeholder="Название компании">
                             </div>
                             <div class="form-group d-flex align-items-center justify-content-between">
-                                <label for="phone">Номер<br> телефона</label>
-                                <input type="text" class="form-control" id="phone" placeholder="">
+                                <input type="text" class="form-control" id="name" placeholder="Имя">
                             </div>
                             <div class="form-group d-flex align-items-center justify-content-between">
-                                <label for="email">Ваш<br> e-mail</label>
-                                <input type="email" class="form-control" id="email" placeholder="">
+                                <input type="text" class="form-control" id="phone" placeholder="Телефон">
                             </div>
                             <div class="form-group d-flex align-items-center justify-content-between">
-                                <label for="company">Название<br> компании</label>
-                                <input type="text" class="form-control" id="company" placeholder="">
+                                <input type="email" class="form-control" id="email" placeholder="E-mail">
                             </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="confirm">
-                                <label class="form-check-label" for="confirm">
-                                    Да! Я согласен(а) получать e-mail рассылку о выгодных предложениях
-                                </label>
-                            </div>
+                            <p class="text-center">
+                                Заполняя даную форму вы соглашаетесь с<br><a href="">политикой «Обработки персональных данных»</a>
+                            </p>
                             <button type="submit" class="big-link d-flex align-items-center justify-content-center m-auto">Подключиться</button>
                         </form>
                     </div>
-                    <div class="modal-footer">
-                        <p>
-                            ИнИнформация про обработку персональных данных! Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially
-                        </p>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal-confirm" tabindex="-1" role="dialog" aria-labelledby="modal-confirm" aria-hidden="true">
+            <img src="images/logo.svg" alt="logo" class="modal-logo">
+            <a href="" class="close-modal" data-dismiss="modal"></a>
+            <div class="modal-dialog modal-dialog-centered" role="document">
+
+                <div class="modal-content">
+                    <div class="modal-header d-flex flex-column align-items-center">
+                        <span class="page-title d-block text-center orange">Ваша заявка принята</span>
+                    </div>
+                    <div class="modal-body">
+                            <div class="confirm-image">
+                                <img src="images/check.svg" alt="Заявка принята">
+                            </div>
+                            <button class="big-link d-flex align-items-center justify-content-center m-auto" data-dismiss="modal">Назад</button>
+                        </form>
                     </div>
                 </div>
             </div>

@@ -21,7 +21,6 @@ function initPage() {
             if(counter == 101){
                 clearInterval(foo);
                 $('.loadingpage').show().addClass("pageisloaded");
-
             }
             else{
                 $('.counter span').html(counter);
@@ -30,7 +29,7 @@ function initPage() {
         }
         localStorage.setItem('popState','shown');
     } else {
-        $('.loadingpage').hide().removeClass("pageisloaded");
+        $('.loadingpage').hide();
     }
     var foo = setInterval(updateCounter , 20);
     $('#fullpage').fullpage({
