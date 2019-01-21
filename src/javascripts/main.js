@@ -2,16 +2,22 @@
 $(document).ready(initPage);
 
 function initPage() {
-    var counter = 0;
-    function updateCounter(){
-        if(counter == 101){
-            clearInterval(foo);
-            $('.loadingpage').addClass("pageisloaded");
+    if(localStorage.getItem('popState') != 'shown') {
+        var counter = 0;
+        function updateCounter(){
+            if(counter == 101){
+                clearInterval(foo);
+                $('.loadingpage').show().addClass("pageisloaded");
+
+            }
+            else{
+                $('.counter span').html(counter);
+                counter++;
+            }
         }
-        else{
-            $('.counter span').html(counter);
-            counter++;
-        }
+        localStorage.setItem('popState','shown');
+    } else {
+        $('.loadingpage').hide().removeClass("pageisloaded");
     }
     var foo = setInterval(updateCounter , 20);
     $('#fullpage').fullpage({
