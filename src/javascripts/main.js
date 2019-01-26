@@ -3,6 +3,7 @@ $(document).ready(initPage);
 
 function initPage() {
     if(localStorage.getItem('popState') != 'shown') {
+        localStorage.setItem('popState','shown');
         var counter = 0;
         function updateCounter(){
             if(counter == 101){
@@ -14,9 +15,9 @@ function initPage() {
                 counter++;
             }
         }
-        localStorage.setItem('popState','shown');
+        
     } else {
-        $('.loadingpage').hide();
+        $('.loadingpage').hide().removeClass("pageisloaded");
     }
     var foo = setInterval(updateCounter , 20);
     $('#fullpage').fullpage({

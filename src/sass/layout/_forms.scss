@@ -74,7 +74,7 @@
 		.modal-content {
 			min-height: 920px;
 			background: rgb(161, 196, 56);
-			opacity: 0.89;
+			opacity: 1;
 		    border: 3px solid #fff;
 		    border-radius: 0;
 		    outline: 0;
@@ -253,8 +253,7 @@
 	}
 }
 .modal {
-	background-color: rgb(161, 196, 56);
-	opacity: 0.89;
+	background-color: rgba(161, 196, 56,0.86);
 }
 #modal-confirm {
 	.modal-content {

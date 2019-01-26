@@ -728,7 +728,7 @@ a {
   .modal .modal-dialog .modal-content {
     min-height: 920px;
     background: #a1c438;
-    opacity: 0.89;
+    opacity: 1;
     border: 3px solid #fff;
     border-radius: 0;
     outline: 0; }
@@ -879,8 +879,7 @@ a {
           font-size: 18px; } }
 
 .modal {
-  background-color: #a1c438;
-  opacity: 0.89; }
+  background-color: rgba(161, 196, 56, 0.86); }
 
 #modal-confirm .modal-content {
   border: 0; }
