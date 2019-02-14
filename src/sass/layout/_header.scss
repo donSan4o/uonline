@@ -272,6 +272,8 @@
                 z-index: 99;
                 background-color: rgb(13, 73, 104);
                 box-shadow: -1.929px 6.729px 30.02px 7.98px rgba(0, 0, 0, 0.94);
+                height: 100vh;
+                overflow-y: auto; 
                 h2 {
                     display: block;
                     font-size: 50px;
@@ -282,16 +284,17 @@
                     display: flex;
                     flex-direction: column;
                     align-self: center;
-                    position: absolute;
-                    bottom: 45px;
-                    @media (max-width: 420px) {
-                        bottom: 25px;
-                    }
+                    position: relative;
+                    bottom: 0;
+                    // @media (max-width: 420px) {
+                    //     bottom: 25px;
+                    // }
                     .big-link {
                         width: 307px;
                         height: 60px;
                         margin-bottom: 45px;
                         font-size: 24px;
+                        flex-shrink: 0;
                         @media (max-width: 640px) {
                             width: 250px;
                             height: 50px;
@@ -463,6 +466,7 @@
                     }
                     @media (max-width: 992px) {
                         margin-left: 0;
+
                     }
                     a {
                         border: 2px solid $white;
@@ -476,8 +480,18 @@
                             border: 3px solid #fff;
                             padding: 5px 10px;
                             width: 100%;
-                            max-width: 250px;
+                            max-width: 307px;
                             margin: 20px auto;
+                            height: 50px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            font-size: 24px;
+                        }
+                        @media (max-width: 640px) {
+                            width: 250px;
+                            height: 50px;
+                            font-size: 20px;
                         }
                         &:hover {
                             color: #072638;

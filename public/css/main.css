@@ -441,7 +441,9 @@ a {
           transition: all 0.3s;
           z-index: 99;
           background-color: #0d4968;
-          box-shadow: -1.929px 6.729px 30.02px 7.98px rgba(0, 0, 0, 0.94); }
+          box-shadow: -1.929px 6.729px 30.02px 7.98px rgba(0, 0, 0, 0.94);
+          height: 100vh;
+          overflow-y: auto; }
           #header .header-inner #myMenu h2 {
             display: block;
             font-size: 50px;
@@ -454,17 +456,15 @@ a {
                 flex-direction: column;
             -ms-flex-item-align: center;
                 align-self: center;
-            position: absolute;
-            bottom: 45px; } }
-    @media (max-width: 992px) and (max-width: 420px) {
-      #header .header-inner #myMenu .social-mobile {
-        bottom: 25px; } }
-      @media (max-width: 992px) {
+            position: relative;
+            bottom: 0; }
             #header .header-inner #myMenu .social-mobile .big-link {
               width: 307px;
               height: 60px;
               margin-bottom: 45px;
-              font-size: 24px; } }
+              font-size: 24px;
+              -ms-flex-negative: 0;
+                  flex-shrink: 0; } }
       @media (max-width: 992px) and (max-width: 640px) {
         #header .header-inner #myMenu .social-mobile .big-link {
           width: 250px;
@@ -642,8 +642,21 @@ a {
                 border: 3px solid #fff;
                 padding: 5px 10px;
                 width: 100%;
-                max-width: 250px;
-                margin: 20px auto; } }
+                max-width: 307px;
+                margin: 20px auto;
+                height: 50px;
+                display: -ms-flexbox;
+                display: flex;
+                -ms-flex-align: center;
+                    align-items: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+                font-size: 24px; } }
+            @media (max-width: 640px) {
+              #header .header-inner #myMenu li.online-pay a {
+                width: 250px;
+                height: 50px;
+                font-size: 20px; } }
             #header .header-inner #myMenu li.online-pay a:hover {
               color: #072638;
               background: #fff; }
